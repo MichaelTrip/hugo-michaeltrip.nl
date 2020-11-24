@@ -1,0 +1,16 @@
+[
+    {
+        "school":"[Redhat Certification](https://www.redhat.com)",
+        "degree":"RHCSA on Redhat Enterprise Linux 8",
+        "major":"Redhat Certified System Administrator on Redhat Enterprise Linux 8",
+        "range":"2020"
+    },
+    {
+        "school":"[Redhat Certification](https://www.redhat.com)",
+        "degree":"RHCSA on Redhat Enterprise Linux 7",
+        "major":"Redhat Certified System Administrator on Redhat Enterprise Linux 7",
+        "notes":"",
+        "range":"2019"
+    }
+   
+]

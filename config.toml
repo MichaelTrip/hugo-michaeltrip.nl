@@ -1,0 +1,34 @@
+baseURL = "https://michaeltrip.nl"
+languageCode = "en-us"
+title = "Michael Trip.nl :: Personal Website"
+theme = "hugo-resume"
+
+[params]
+    firstName = "Michael"
+    lastName = "Trip"
+    address = "Apeldoorn, The Netherlands"
+    phone = "+31 6 480 330 62"
+    contactNote = "Linux engineer"
+    profileImage = "img/myownface.jpg"
+    email = "michael@alcatrash.org"
+    description = "Experienced Linux Engineer with a wide experience including: Linux, networking and security"
+    favicon = "/favicon.ico"
+    # what sections
+    showSkills = true
+    showProjects = false
+    showOpenSource = false
+    showPublications = false
+    showExperience = true
+    showEducation = true
+    showBlog = false
+
+    showQr = true
+
+[[params.handles]]
+    name = "LinkedIn"
+    link = "https://www.linkedin.com/in/michaeltrip/"
+
+
+[[params.handles]]
+    name = "GitHub"
+    link = "https://github.com/michaeltrip/"
