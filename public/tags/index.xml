@@ -6,52 +6,7 @@
     <description>Recent content in Tags on Michael Trip.nl :: Personal Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Jan 2020 13:44:10 +0000</lastBuildDate><atom:link href="https://michaeltrip.nl/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>apache</title>
-      <link>https://michaeltrip.nl/tags/apache/</link>
-      <pubDate>Sun, 05 Jan 2020 13:44:10 +0000</pubDate>
-      
-      <guid>https://michaeltrip.nl/tags/apache/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>redirect</title>
-      <link>https://michaeltrip.nl/tags/redirect/</link>
-      <pubDate>Sun, 05 Jan 2020 13:44:10 +0000</pubDate>
-      
-      <guid>https://michaeltrip.nl/tags/redirect/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rewrite</title>
-      <link>https://michaeltrip.nl/tags/rewrite/</link>
-      <pubDate>Sun, 05 Jan 2020 13:44:10 +0000</pubDate>
-      
-      <guid>https://michaeltrip.nl/tags/rewrite/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ssl</title>
-      <link>https://michaeltrip.nl/tags/ssl/</link>
-      <pubDate>Sun, 05 Jan 2020 13:44:10 +0000</pubDate>
-      
-      <guid>https://michaeltrip.nl/tags/ssl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>web development</title>
-      <link>https://michaeltrip.nl/tags/web-development/</link>
-      <pubDate>Sun, 05 Jan 2020 13:44:10 +0000</pubDate>
-      
-      <guid>https://michaeltrip.nl/tags/web-development/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sun, 11 Feb 2018 12:41:05 -0500</lastBuildDate><atom:link href="https://michaeltrip.nl/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Atlassian Ecosystem</title>
       <link>https://michaeltrip.nl/tags/atlassian-ecosystem/</link>
@@ -148,6 +103,51 @@
       <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
       
       <guid>https://michaeltrip.nl/tags/culture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>apache</title>
+      <link>https://michaeltrip.nl/tags/apache/</link>
+      <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/apache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>redirect</title>
+      <link>https://michaeltrip.nl/tags/redirect/</link>
+      <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/redirect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rewrite</title>
+      <link>https://michaeltrip.nl/tags/rewrite/</link>
+      <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/rewrite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssl</title>
+      <link>https://michaeltrip.nl/tags/ssl/</link>
+      <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/ssl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web development</title>
+      <link>https://michaeltrip.nl/tags/web-development/</link>
+      <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/web-development/</guid>
       <description></description>
     </item>
     

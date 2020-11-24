@@ -1,12 +1,18 @@
 [
     {
-        "school":"[Redhat Certification](https://www.redhat.com)",
+        "school":"[Redhat Certification](https://rhtapps.redhat.com/verify/?certId=190-236-257)",
+        "degree":"RHCE on Redhat Enterprise Linux 8",
+        "major":"Redhat Certified System Engineer on Redhat Enterprise Linux 8",
+        "range":"2020"
+    },
+    {
+        "school":"[Redhat Certification](https://rhtapps.redhat.com/verify/?certId=190-236-257)",
         "degree":"RHCSA on Redhat Enterprise Linux 8",
         "major":"Redhat Certified System Administrator on Redhat Enterprise Linux 8",
         "range":"2020"
     },
     {
-        "school":"[Redhat Certification](https://www.redhat.com)",
+        "school":"[Redhat Certification](https://rhtapps.redhat.com/verify/?certId=190-236-257)",
         "degree":"RHCSA on Redhat Enterprise Linux 7",
         "major":"Redhat Certified System Administrator on Redhat Enterprise Linux 7",
         "notes":"",
