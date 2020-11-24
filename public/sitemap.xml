@@ -35,6 +35,46 @@
   </url>
   
   <url>
+    <loc>https://michaeltrip.nl/tags/apache/</loc>
+    <lastmod>2020-11-24T08:29:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://michaeltrip.nl/blog/</loc>
+    <lastmod>2020-11-24T08:29:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://michaeltrip.nl/blog/lorum-ipsum/</loc>
+    <lastmod>2020-11-24T08:29:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://michaeltrip.nl/tags/redirect/</loc>
+    <lastmod>2020-11-24T08:29:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://michaeltrip.nl/tags/rewrite/</loc>
+    <lastmod>2020-11-24T08:29:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://michaeltrip.nl/tags/ssl/</loc>
+    <lastmod>2020-11-24T08:29:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://michaeltrip.nl/tags/</loc>
+    <lastmod>2020-11-24T08:29:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://michaeltrip.nl/tags/web-development/</loc>
+    <lastmod>2020-11-24T08:29:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://michaeltrip.nl/tags/atlassian-ecosystem/</loc>
     <lastmod>2018-02-11T12:41:05-05:00</lastmod>
   </url>
@@ -81,11 +121,6 @@
   </url>
   
   <url>
-    <loc>https://michaeltrip.nl/tags/</loc>
-    <lastmod>2018-02-11T12:41:05-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://michaeltrip.nl/</loc>
     <lastmod>2018-02-10T18:56:13-05:00</lastmod>
     <priority>1</priority>
@@ -118,42 +153,12 @@
   </url>
   
   <url>
-    <loc>https://michaeltrip.nl/tags/apache/</loc>
-    <lastmod>2009-01-01T14:09:10+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://michaeltrip.nl/blog/</loc>
-    <lastmod>2009-01-01T14:09:10+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://michaeltrip.nl/blog/force-ssl/</loc>
     <lastmod>2009-01-01T14:09:10+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://michaeltrip.nl/tags/redirect/</loc>
-    <lastmod>2009-01-01T14:09:10+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://michaeltrip.nl/tags/rewrite/</loc>
-    <lastmod>2009-01-01T14:09:10+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://michaeltrip.nl/tags/ssl/</loc>
-    <lastmod>2009-01-01T14:09:10+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://michaeltrip.nl/blog/force-ssl-test/</loc>
-    <lastmod>2009-01-01T14:09:10+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://michaeltrip.nl/tags/web-development/</loc>
     <lastmod>2009-01-01T14:09:10+00:00</lastmod>
   </url>
   

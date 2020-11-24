@@ -45,6 +45,15 @@
     </item>
     
     <item>
+      <title>Lorum Ipsum testing</title>
+      <link>https://michaeltrip.nl/blog/lorum-ipsum/</link>
+      <pubDate>Tue, 24 Nov 2020 08:29:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/blog/lorum-ipsum/</guid>
+      <description>Intro blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla  Creating self-signed certificates (free, but should only be used internally or for testing, users will; see an &amp;lsquo;Untrusted&amp;quot; warning) Requesting a CA Signed certificate (not free, but the final certificate is trusted and seamless for users)  The second link uses the schools internal CA, you will need to pay a public CA like Entrust or Verisign. All of this information is aimed at &amp;lsquo;nix or solaris servers running apache.</description>
+    </item>
+    
+    <item>
       <title>BOSH release for Bamboo &amp; Remote Agents</title>
       <link>https://michaeltrip.nl/projects/creations/bosh-agents/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>

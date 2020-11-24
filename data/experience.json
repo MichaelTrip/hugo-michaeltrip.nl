@@ -1,25 +1,25 @@
 [
     {
         "role":"Opensource Consultant",
-        "company":"AnylinQ",
+        "company":"[AnylinQ](https://anylinq.com)",
         "summary":"Consultant in Opensource:\n- Redhat\n- Ansible\n- Redhat Satellite",
         "range":"November 2019 - Present"
     },
     {
         "role":"Sysadmin Linux / Windows",
-        "company":"Capitar IT group",
+        "company":"[Capitar IT group](https://www.capitar.com)",
         "summary":"Managing serveral things:\n- Windows\n- Linux\n- Networking",
         "range":"January 2019 - Oktober 2019"
     },
     {
         "role":"IT Security Consultant",
-        "company":"GroupSecure",
+        "company":"[GroupSecure](https://groupsecure.nl)",
         "summary":"Managing firewalls and implementing Mobile Device Management solutions",
         "range":"May 2018 - December 2018"
     },
     {
         "role":"IT Sysadmin",
-        "company":"Crystal ICT",
+        "company":"[Crystal ICT](https://crystalict.nl)",
         "summary":"Managing a large network and some Linux sysadmin work",
         "range":"November 2014 - May 2018"
     }
