@@ -1,6 +1,6 @@
 baseURL = "https://michaeltrip.nl"
 languageCode = "en-us"
-title = "Michael Trip.nl :: Personal Website"
+title = "Michaeltrip.nl :: Personal Website"
 theme = "hugo-resume"
 
 [params]
