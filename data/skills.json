@@ -1,14 +1,33 @@
 [
   {
       "grouping":"Architecture & Virtualization",
-      "skills":[ "IP Networking","DNS","Firewalls","Load Balancing","Microservices","RESTful APIs","SaaS/PaaS/IaaS", "VMWare", "Proxmox", "QEMU"]
+      "skills":[ "IP Networking","DNS","Firewalls","Load Balancing","Microservices","RESTful APIs","SaaS/PaaS/IaaS", "VMWare", "Proxmox", "QEMU", "DNS", "Postfix"]
   },{
       "grouping":"Languages, Operating Systems & Tools",
-      "skills":[ "Python","git","subversion","linux","bash","php", "Debian", "Redhat Enterprise Linux", "Ansible Automation Engine"]
+      "skills":[ 
+        {"name":"Python"},
+        {"name":"git"},
+        {"name":"subversion"},
+        {"name":"linux"},
+        {"name":"bash"},
+        {"name":"php"},
+        {"name":"Debian"},
+        {"name":"Ubuntu"},
+        {"name":"Redhat Enterprise Linux","icon":"redhat"},
+        {"name":"Ansible Automation Engine","icon":"redhat"}
+      ]
   },
   {
       "grouping":"Platform Development & Administration",
-      "skills":[ "Apache","NGINX","MySQL","Wordpress","Hugo", "Ansible Tower", "Redhat Satellite"]
+      "skills":[ 
+        {"name":"Apache"},
+        {"name":"NGINX"},
+        {"name":"MySQL"},
+        {"name":"Wordpress"},
+        {"name":"Hugo"}, 
+        {"name":"Ansible Tower","icon":"redhat"}, 
+        {"name":"Redhat Satellite","icon":"redhat"}
+        ]
   },
   {
       "grouping":"Data Management",
