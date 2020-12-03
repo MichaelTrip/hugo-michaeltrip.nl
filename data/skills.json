@@ -1,7 +1,7 @@
 [
   {
       "grouping":"Architecture & Virtualization",
-      "skills":[ "IP Networking","DNS","Firewalls","Load Balancing","Microservices","RESTful APIs","SaaS/PaaS/IaaS", "VMWare", "Proxmox", "QEMU", "DNS", "Postfix"]
+      "skills":[ "IP Networking","Firewalls","Load Balancing","Microservices","RESTful APIs","SaaS/PaaS/IaaS", "VMWare", "Proxmox", "QEMU", "DNS", "Postfix"]
   },{
       "grouping":"Languages, Operating Systems & Tools",
       "skills":[ 
