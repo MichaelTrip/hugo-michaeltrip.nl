@@ -45,7 +45,8 @@
           {"name":"Google Cloud","link":"https://cloud.google.com"},
           {"name":"Linux","link":"https://kernel.org"},
           {"name": "Openshift","link":"https://wwww.openshift.com"},
-          {"name": "lxd","link":"https://wwww.linuxcontainers.org"}
+          {"name": "lxd","link":"https://wwww.linuxcontainers.org"},
+          {"name": "rancher","link":"https://www.rancher.com"}
         ]
   }
 ]
