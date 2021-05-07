@@ -4,7 +4,7 @@
       "skills":[ "IP Networking","Firewalls","Load Balancing","Microservices","RESTful APIs","SaaS/PaaS/IaaS", "VMWare", "Proxmox", "QEMU", "DNS", "Postfix"]
   },{
       "grouping":"Languages, Operating Systems & Tools",
-      "skills":[ 
+      "skills":[
         {"name":"Python"},
         {"name":"git"},
         {"name":"subversion"},
@@ -19,13 +19,13 @@
   },
   {
       "grouping":"Platform Development & Administration",
-      "skills":[ 
+      "skills":[
         {"name":"Apache"},
         {"name":"NGINX"},
         {"name":"MySQL"},
         {"name":"Wordpress"},
-        {"name":"Hugo"}, 
-        {"name":"Ansible Tower","icon":"redhat"}, 
+        {"name":"Hugo"},
+        {"name":"Ansible Tower","icon":"redhat"},
         {"name":"Redhat Satellite","icon":"redhat"}
         ]
   },
@@ -46,7 +46,9 @@
           {"name":"Linux","link":"https://kernel.org"},
           {"name": "Openshift","link":"https://wwww.openshift.com"},
           {"name": "lxd","link":"https://wwww.linuxcontainers.org"},
-          {"name": "rancher","link":"https://www.rancher.com"}
+          {"name": "rancher","link":"https://www.rancher.com"},
+          {"name": "Terraform", "link":"https://www.terraform.io/"},
+          {"name": "Azure", "link":"https://www.azure.com"}
         ]
   }
 ]
