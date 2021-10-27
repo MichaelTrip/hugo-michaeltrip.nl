@@ -34,7 +34,7 @@
       "skills":[
         {"name":"Microsoft SQL Server","icon":"msql_server"},
         {"name":"MongoDB"},
-        {"name":"MariaDB"},
+        {"name":"MariaDB","icon": "mysql"},
         {"name":"PostgreSQL"}
       ]
   },
@@ -51,7 +51,7 @@
           {"name": "rancher","link":"https://www.rancher.com"},
           {"name": "Terraform", "link":"https://www.terraform.io/"},
           {"name": "Azure", "link":"https://www.azure.com"},
-          {"name": "Kubernetes", "link":"https://www.kubernetes.io"}
+          {"name": "Kubernetes", "link":"https://www.kubernetes.io", "icon": "kubernetes"}
         ]
   }
 ]
