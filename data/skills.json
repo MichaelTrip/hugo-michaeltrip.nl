@@ -33,7 +33,9 @@
       "grouping":"Data Management",
       "skills":[
         {"name":"Microsoft SQL Server","icon":"msql_server"},
-        {"name":"MongoDB"}
+        {"name":"MongoDB"},
+        {"name":"MariaDB"},
+        {"name":"PostgreSQL"}
       ]
   },
   {
@@ -48,7 +50,8 @@
           {"name": "lxd","link":"https://wwww.linuxcontainers.org"},
           {"name": "rancher","link":"https://www.rancher.com"},
           {"name": "Terraform", "link":"https://www.terraform.io/"},
-          {"name": "Azure", "link":"https://www.azure.com"}
+          {"name": "Azure", "link":"https://www.azure.com"},
+          {"name": "Kubernetes", "link":"https://www.kubernetes.io"}
         ]
   }
 ]

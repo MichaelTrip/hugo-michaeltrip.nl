@@ -1,5 +1,12 @@
 [
     {
+        "school":"[Kubernetes](https://www.credly.com/badges/1e047389-ffb4-4f55-afc4-5ac33e4fedda)",
+        "degree":"CKAD",
+        "major":"Certified Kubernetes Application Developer",
+        "range":"2021"
+    },
+
+    {
         "school":"[Redhat Certification](https://rhtapps.redhat.com/verify/?certId=190-236-257)",
         "degree":"RHCE on Redhat Enterprise Linux 8",
         "major":"Redhat Certified Engineer on Redhat Enterprise Linux 8",
@@ -18,5 +25,5 @@
         "notes":"",
         "range":"2019"
     }
-   
+
 ]
