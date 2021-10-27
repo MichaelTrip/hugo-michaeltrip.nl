@@ -103,11 +103,14 @@
 
 
 
-<section class="resume-section p-3 p-lg-5 d-flex d-column">
+<section class="resume-section p-3 p-lg-5 d-flex flex-column">
   <div class="my-auto">
-    <h2 class="mb-0"><span class="text-primary">TEST</span></h2>
-    <span class="text-primary">January 1, 2009</span>
-    <h2 id="intro">Intro</h2>
+  	<div class="mb-3 d-flex flex-row justify-content-between">
+    	<h2 class="mb-0"><span class="text-primary">TEST</span></h2>
+    	<span class="">January 1, 2009</span>
+    </div>
+    <div>
+    	<h2 id="intro">Intro</h2>
 <p>Doesn&rsquo;t matter whether it&rsquo;s a CakePHP app for a client, your own personal CMS, or any other web based application. <strong>If your passing around passwords or other sensitive info you should really implement SSL.</strong> SSL provides 2 main perks to your visitors.</p>
 <ul>
 <li>First it encrypts all communication that flies across the web. This prevents curious or devious billies from getting your secrets.</li>
@@ -137,20 +140,12 @@ RewriteRule ^(.*)$ https://mysecretarea.%{SERVER_NAME}$1 \[R,L\]
 <pre><code>RewriteCond %{HTTPS} !=on
 RewriteRule ^/admin/(.*)$ https://%{SERVER_NAME}/admin/$1 \[R,L\]
 </code></pre>
-    
+	    
+	</div>
+    <div>
+    	
+    </div>
     <ul class="tags">
-    
-      <li><a class="tag" href="/tags/apache">apache</a></li>
-    
-      <li><a class="tag" href="/tags/apache">apache</a></li>
-    
-      <li><a class="tag" href="/tags/redirect">redirect</a></li>
-    
-      <li><a class="tag" href="/tags/rewrite">rewrite</a></li>
-    
-      <li><a class="tag" href="/tags/ssl">ssl</a></li>
-    
-      <li><a class="tag" href="/tags/web-development">web development</a></li>
     
 </ul>
 

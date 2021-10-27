@@ -1,0 +1,16 @@
+[
+	{
+		"name":"Certified Kubernetes Application Developer",
+		"description": "Certified Kubernetes Application Developer",
+		"badge":"https://images.credly.com/size/340x340/images/f88d800c-5261-45c6-9515-0458e31c3e16/ckad_from_cncfsite.png",
+		"proof":"https://www.credly.com/badges/1e047389-ffb4-4f55-afc4-5ac33e4fedda"
+
+	},
+	{
+		"name":"Redhat Certified Administrator / Engineer",
+		"description": "Redhat Certified Administrator / Engineer",
+		"badge":"/img/redhatlogo.jpeg",
+		"proof":"https://rhtapps.redhat.com/verify/?certId=190-236-257"
+
+	}
+]
