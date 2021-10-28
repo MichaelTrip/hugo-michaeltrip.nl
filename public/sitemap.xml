@@ -9,6 +9,12 @@
   </url>
   
   <url>
+    <loc>https://michaeltrip.nl/blog/</loc>
+    <lastmod>2021-10-28T10:25:21+02:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://michaeltrip.nl/projects/contributions/</loc>
     <lastmod>2020-11-24T08:13:09+01:00</lastmod>
     <priority>0.5</priority>
@@ -39,28 +45,23 @@
   </url>
   
   <url>
-    <loc>https://michaeltrip.nl/blog/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://michaeltrip.nl/tags/homelab/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-28T09:12:32+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://michaeltrip.nl/tags/kubernetes/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-28T09:12:32+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://michaeltrip.nl/tags/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-28T09:12:32+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://michaeltrip.nl/blog/setting-up-kubernetes/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-28T09:12:32+02:00</lastmod>
   </url>
   
   <url>
