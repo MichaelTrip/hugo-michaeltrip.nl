@@ -24,7 +24,8 @@ PygmentsStyle = "monokai"
     showPublications = false
     showExperience = true
     showEducation = true
-    showBlog = false
+    showBlog = true
+    featured = false
 
     showQr = true
 

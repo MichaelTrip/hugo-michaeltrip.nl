@@ -45,12 +45,15 @@
     </item>
     
     <item>
-      <title>Lorum Ipsum testing</title>
-      <link>https://michaeltrip.nl/blog/lorum-ipsum/</link>
-      <pubDate>Tue, 24 Nov 2020 08:29:00 +0000</pubDate>
+      <title>Tips on the CKAD exam</title>
+      <link>https://michaeltrip.nl/blog/setting-up-kubernetes/</link>
+      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://michaeltrip.nl/blog/lorum-ipsum/</guid>
-      <description>Intro blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla  Creating self-signed certificates (free, but should only be used internally or for testing, users will; see an &amp;lsquo;Untrusted&amp;quot; warning) Requesting a CA Signed certificate (not free, but the final certificate is trusted and seamless for users)  The second link uses the schools internal CA, you will need to pay a public CA like Entrust or Verisign. All of this information is aimed at &amp;lsquo;nix or solaris servers running apache.</description>
+      <guid>https://michaeltrip.nl/blog/setting-up-kubernetes/</guid>
+      <description>Intro So i passed the CKAD exam last september. In this blog i wanted to share some tips.
+Learning matters For me personally i am the type of guy that learns by just doing it. Set up some Kubernetes node with either Kind or Rancher Desktop and just try some things out.
+Also, check out some great Udemy courses. I personally liked this CKAD course by Mumshad Mannambeth.
+Also, try some practice exercises from the internet.</description>
     </item>
     
     <item>
@@ -60,26 +63,6 @@
       
       <guid>https://michaeltrip.nl/projects/creations/bosh-agents/</guid>
       <description>BOSH (Bosh Outer SHell) &amp;ldquo;&amp;hellip;is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.&amp;rdquo; And it&amp;rsquo;s amazingly powerful. This examples uses BOSH to provision an Alassian vendor app running on JDK along with the support Postgres database and agents to support it. The releases manages the health of services and will automatically provision, start/stop processes across the various services.</description>
-    </item>
-    
-    <item>
-      <title>Forcing Visits to use SSL</title>
-      <link>https://michaeltrip.nl/blog/force-ssl/</link>
-      <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
-      
-      <guid>https://michaeltrip.nl/blog/force-ssl/</guid>
-      <description>Intro Doesn&amp;rsquo;t matter whether it&amp;rsquo;s a CakePHP app for a client, your own personal CMS, or any other web based application. If your passing around passwords or other sensitive info you should really implement SSL. SSL provides 2 main perks to your visitors.
- First it encrypts all communication that flies across the web. This prevents curious or devious billies from getting your secrets. Secondly it ensures to the user that your server is in fact who it claims, and not a nasty &amp;lsquo;man in the middle&amp;quot; attack.</description>
-    </item>
-    
-    <item>
-      <title>TEST</title>
-      <link>https://michaeltrip.nl/blog/force-ssl-test/</link>
-      <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
-      
-      <guid>https://michaeltrip.nl/blog/force-ssl-test/</guid>
-      <description>Intro Doesn&amp;rsquo;t matter whether it&amp;rsquo;s a CakePHP app for a client, your own personal CMS, or any other web based application. If your passing around passwords or other sensitive info you should really implement SSL. SSL provides 2 main perks to your visitors.
- First it encrypts all communication that flies across the web. This prevents curious or devious billies from getting your secrets. Secondly it ensures to the user that your server is in fact who it claims, and not a nasty &amp;lsquo;man in the middle&amp;quot; attack.</description>
     </item>
     
     <item>
@@ -111,7 +94,7 @@ No content shown here is rendered, all content is based in the template layouts/
 Setting a very low sitemap priority will tell search engines this is not important content.
 This implementation uses Fusejs, jquery and mark.js
 Initial setup Search depends on additional output content type of JSON in config.toml
-[outputs] home = [&amp;quot;HTML&amp;quot;, &amp;quot;JSON&amp;quot;] Searching additional fileds To search additional fields defined in front matter, you must add it in 2 places.</description>
+[outputs] home = [&amp;#34;HTML&amp;#34;, &amp;#34;JSON&amp;#34;] Searching additional fileds To search additional fields defined in front matter, you must add it in 2 places.</description>
     </item>
     
   </channel>
