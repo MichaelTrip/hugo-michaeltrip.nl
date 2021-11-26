@@ -1,9 +1,16 @@
 [
 	{
+		"name":"Certified Kubernetes Administrator",
+		"description": "Certified Kubernetes Administrator",
+		"badge":"https://images.credly.com/size/340x340/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncfsite__281_29.png",
+		"proof":"https://www.credly.com/badges/61cd6a20-ea35-4cf3-8f34-652cae46caf6/public_url"
+
+	},
+	{
 		"name":"Certified Kubernetes Application Developer",
 		"description": "Certified Kubernetes Application Developer",
 		"badge":"https://images.credly.com/size/340x340/images/f88d800c-5261-45c6-9515-0458e31c3e16/ckad_from_cncfsite.png",
-		"proof":"https://www.credly.com/badges/1e047389-ffb4-4f55-afc4-5ac33e4fedda"
+		"proof":"https://www.credly.com/badges/1e047389-ffb4-4f55-afc4-5ac33e4fedda/public_url"
 
 	},
 	{
