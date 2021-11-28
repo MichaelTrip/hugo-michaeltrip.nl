@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="https://michaeltrip.nl/css/tweaks.css">
   <link rel="preload" href="https://michaeltrip.nl/css/resume-override.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="https://michaeltrip.nl/css/resume-override.css">
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.89.3" />
   
    
   
@@ -129,9 +129,9 @@
 <h2 id="use-autocompletion-in-your-bashrc">Use autocompletion in your bashrc</h2>
 <p>When you are working on the CKAD exam, speed is everything. You have approx 15-17 questions to do within one hour, so time is crucial.</p>
 <p>You can speed things up by using auto-completion in your shell. To do so, enable auto completion for <code>kubectl</code> in your <code>.bashrc</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;source &lt;(kubectl completion bash)&#34;</span> &gt;&gt; ~/.bashrc <span style="color:#75715e"># add autocomplete permanently to your bash shell.</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;source &lt;(kubectl completion bash)&#34;</span> &gt;&gt; ~/.bashrc <span style="color:#75715e"># add autocomplete permanently to your bash shell.</span>
 </code></pre></div><p>After that, you can hit the <!-- raw HTML omitted --> button on your keyboard to autocomplete commands. If you are tired of of typing in the whole <code>kubectl</code> command you can also alias that command.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;alias k=kubectl&#34;</span> &gt;&gt; ~/.bashrc
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;alias k=kubectl&#34;</span> &gt;&gt; ~/.bashrc
 echo <span style="color:#e6db74">&#34;complete -F __start_kubectl k&#34;</span> &gt;&gt; ~/.bashrc
 </code></pre></div><p>More information can be found in the <a href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/">Kubectl cheatsheet</a>, which you can also use on the exam.</p>
 <h2 id="use-bookmarks-in-your-browser">Use bookmarks in your browser</h2>
@@ -145,18 +145,18 @@ echo <span style="color:#e6db74">&#34;complete -F __start_kubectl k&#34;</span> 
 <h2 id="use-kubectl-expose">Use kubectl expose</h2>
 <p>This is a odd one, but i found it very usable. When you create a <code>pod</code> or a <code>deployment</code> you want it to be served some how. To do this, you can quickly create a <code>service</code> for this <code>pod</code> or <code>deployment</code>.</p>
 <p>For example: I have a pod called <code>nginx</code>. To create a service for it, i can use <code>kubectl expose</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl expose pod nginx --port<span style="color:#f92672">=</span><span style="color:#ae81ff">80</span> --name<span style="color:#f92672">=</span>servicename
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl expose pod nginx --port<span style="color:#f92672">=</span><span style="color:#ae81ff">80</span> --name<span style="color:#f92672">=</span>servicename
 </code></pre></div><p>Or, if you want a yaml file to edit it and create some more service parameters, use the following command:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl expose pod nginx --port --name<span style="color:#f92672">=</span>servicename --dry-run<span style="color:#f92672">=</span>client -o yaml &gt; service.yml
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl expose pod nginx --port --name<span style="color:#f92672">=</span>servicename --dry-run<span style="color:#f92672">=</span>client -o yaml &gt; service.yml
 </code></pre></div><h2 id="use-a-alias-to-quickly-switch-to-another-namespace">Use a alias to quickly switch to another namespace</h2>
 <p>Exam quests will take place in different namespaces and contexts. If there is a question that doesn´t mention a namespace, always use the <code>default</code> namespace.</p>
 <p>You can switch namespaces by typing this command:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl config set-context --current --namespace namespacename
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl config set-context --current --namespace namespacename
 </code></pre></div><p>A bit long, isn´t it? To make life easier i use a alias you can add to your <code>.bashrc</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#39;alias kn=&#34;kubectl config set-context --current --namespace&#34;&#39;</span> &gt;&gt; ~/.bashrc
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#39;alias kn=&#34;kubectl config set-context --current --namespace&#34;&#39;</span> &gt;&gt; ~/.bashrc
 </code></pre></div><h2 id="create-your-own-vimrc">Create your own .vimrc</h2>
 <p>If you use vim as your favorite editor, it is important to use the right configuration. You can edit your <code>.vimrc</code> in your home folder. I used the following settings:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">set nu # set numbers
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">set nu # set numbers
 set tabstop=2 shiftwidth=2 expandtab # use 2 spaces instead of tab
 set ai # autoindent: when go to new line keep same indentation
 set cursorcolumn # You see a column on your cursor so you can easily check the identation.
