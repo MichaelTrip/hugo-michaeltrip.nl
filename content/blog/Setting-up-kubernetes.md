@@ -22,11 +22,11 @@ Also, try some practice exercises from the internet. I just looked some of those
 * https://github.com/dgkanatsios/CKAD-exercises
 * https://github.com/jamesbuckett/ckad-questions
 
-Also, if you have booked the exam, you are also entitled to use the Exam simulator by (killer.sh)[https://killer.sh]. If you log-in on the site of the Linux Foundation there is a link to that exam simulator. You have 2 shots.
+Also, if you have booked the exam, you are also entitled to use the Exam simulator by [killer.sh](https://killer.sh). If you log-in on the site of the Linux Foundation there is a link to that exam simulator. You have 2 shots.
 
 ## Use autocompletion in your bashrc
 
-When you are working on the CKAD exam, speed is everything. You have approx 15-17 questions to do within one hour, so time is crucial.
+When you are working on the CKAD exam, speed is everything. You have approx 15-17 questions to do within two hours, so time is crucial.
 
 You can speed things up by using auto-completion in your shell. To do so, enable auto completion for `kubectl` in your `.bashrc`.
 
@@ -112,4 +112,5 @@ Go through all the questions and begin with the easiest ones first. After that, 
 ### Check in which context you have to use
 
 At the beginning of every question, it states in which context you will work in. There is also a copy button with to command that you can use. Use this button, it will save you a lot of time.
+
 
