@@ -3,7 +3,7 @@ name: Build and create docker
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - master  # Set a branch to deploy
   pull_request:
 
 jobs:
@@ -52,6 +52,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: user/app:latest
+          tags: michaeltrip/hugo-michaeltrip.nl:latest
 
 ...
