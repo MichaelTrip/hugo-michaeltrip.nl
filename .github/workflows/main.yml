@@ -81,7 +81,7 @@ jobs:
           git config user.email "github-actions@alcatrash.org"
           cd argocd/apps/hugo-michaeltrip.nl
 
-          sed -i "s/\(hugo-michaeltrip.nl:\).*/\1$TAG/g" deployment.yml
+          sed -i 's/\(hugo-michaeltrip.nl:\).*/\1$TAG/g' deployment.yml
           git add --all
           git commit -m "updated manifest file. Bumped release to $TAG"
           git push
