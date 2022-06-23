@@ -68,6 +68,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: michaeltrip/hugo-michaeltrip.nl:${{ steps.bump-semver.outputs.new_version }}
+          tags: michaeltrip/hugo-michaeltrip.nl:${{ steps.bump-semver.outputs.new_version }},michaeltrip/hugo-michaeltrip.nl:latest
 
 ...
