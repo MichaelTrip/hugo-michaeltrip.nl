@@ -14,10 +14,17 @@
 
 	},
 	{
-		"name":"Redhat Certified Administrator / Engineer",
-		"description": "Redhat Certified Administrator / Engineer",
-		"badge":"/img/redhatlogo.jpeg",
-		"proof":"https://rhtapps.redhat.com/verify/?certId=190-236-257"
+		"name":"Redhat Certified System Administrator",
+		"description": "Redhat Certified System Administrator",
+		"badge":"https://images.credly.com/size/340x340/images/572de0ba-2c59-4816-a59d-b0e1687e45ee/image.png",
+		"proof":"https://www.credly.com/badges/7c679f62-b089-49aa-bc65-d928aa58bd73/public_url"
+
+	},
+	{
+		"name":"Redhat Certified Engineer",
+		"description": "Redhat Certified Engineer",
+		"badge":"https://images.credly.com/size/340x340/images/19c4e804-54fe-4857-b022-7cfd5520596c/image.png",
+		"proof":"https://www.credly.com/badges/7bde8764-1a5e-4f84-9f5c-73fba0143e9f/public_url"
 
 	}
 ]
