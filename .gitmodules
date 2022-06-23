@@ -1,7 +1,7 @@
 
 [submodule "themes/hugo-resume"]
 	path = themes/hugo-resume
-	url = git@github.com:MichaelTrip/hugo-resume.git
+	url = https://github.com/MichaelTrip/hugo-resume.git
 [submodule "themes/hugo-resume-orginial"]
 	path = themes/hugo-resume-orginial
 	url = https://github.com/eddiewebb/hugo-resume.git
