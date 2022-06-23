@@ -32,8 +32,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          
-          
+
+
   release:
     runs-on: ubuntu-latest
     steps:
@@ -51,7 +51,7 @@ jobs:
       - uses: actions-ecosystem/action-push-tag@v1
         with:
           tag: ${{ steps.bump-semver.outputs.new_version }}
-          message: '${{ steps.bump-semver.outputs.new_version }}: PR #${{ github.event.pull_request.number }} ${{ github.event.pull_request.title }}'          
+          message: '${{ steps.bump-semver.outputs.new_version }}: PR #${{ github.event.pull_request.number }} ${{ github.event.pull_request.title }}'
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
@@ -69,5 +69,24 @@ jobs:
         with:
           push: true
           tags: michaeltrip/hugo-michaeltrip.nl:${{ steps.bump-semver.outputs.new_version }},michaeltrip/hugo-michaeltrip.nl:latest
+
+      - name: bump version for application in deployment manifest
+        env:
+          GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
+          TAG: ${{ steps.bump-semver.outputs.new_version }}
+        run: |
+          git clone https://michael:$GITEA_TOKEN@git.alcatrash.net/michael/kubernetes.git
+          git config user.name "Github actions"
+          git config user.email "github-actions@alcatrash.org"
+          cd kubernetes/argocd/apps/hugo-michaeltrip.nl
+
+          sed -i 's/\(hugo-michaeltrip.nl:\).*/\1$TAG/g' deployment.yml
+
+          git commit -m "updated manifest file. Bumped release to $TAG"
+          git push
+
+
+
+
 
 ...
