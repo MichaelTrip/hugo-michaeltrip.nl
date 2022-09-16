@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM docker.io/nginx:alpine
 
 LABEL maintainer="Michael Trip <michael@alcatrash.org>"
 
