@@ -1,5 +1,11 @@
 [
     {
+        "school":"[Redhat Certification](https://www.credly.com/badges/c2a23139-a42a-4350-8981-ec7146bf3b43/public_url)",
+        "degree":"RCS on OpenShift 4.6",
+        "major":"Red Hat® Certified Specialist in OpenShift Administration",
+        "range":"2021"
+    },
+    {
         "school":"[The Cloud Native Computing Foundation](https://www.credly.com/badges/61cd6a20-ea35-4cf3-8f34-652cae46caf6/public_url)",
         "degree":"CKA",
         "major":"Certified Kubernetes Administrator",
@@ -14,19 +20,19 @@
     {
         "school":"[Redhat Certification](https://www.credly.com/badges/7bde8764-1a5e-4f84-9f5c-73fba0143e9f/public_url)",
         "degree":"RHCE on Redhat Enterprise Linux 8",
-        "major":"Redhat Certified Engineer on Redhat Enterprise Linux 8",
+        "major":"Red Hat® Certified Engineer on Redhat Enterprise Linux 8",
         "range":"2020"
     },
     {
         "school":"[Redhat Certification](https://www.credly.com/badges/7c679f62-b089-49aa-bc65-d928aa58bd73/public_url)",
         "degree":"RHCSA on Redhat Enterprise Linux 8",
-        "major":"Redhat Certified System Administrator on Redhat Enterprise Linux 8",
+        "major":"Red Hat® Certified System Administrator on Redhat Enterprise Linux 8",
         "range":"2020"
     },
     {
         "school":"[Redhat Certification](https://www.credly.com/badges/7c679f62-b089-49aa-bc65-d928aa58bd73/public_url)",
         "degree":"RHCSA on Redhat Enterprise Linux 7",
-        "major":"Redhat Certified System Administrator on Redhat Enterprise Linux 7",
+        "major":"Red Hat® Certified System Administrator on Redhat Enterprise Linux 7",
         "notes":"",
         "range":"2019"
     }
