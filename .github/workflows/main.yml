@@ -74,6 +74,7 @@ jobs:
         with:
           push: true
           tags: michaeltrip/hugo-michaeltrip.nl:${{ steps.bump-semver.outputs.new_version }},michaeltrip/hugo-michaeltrip.nl:latest
+          platforms: arm64,amd64
 
       - name: bump version for application in deployment manifest
         env:
