@@ -26,6 +26,7 @@ PygmentsStyle = "monokai"
     showEducation = true
     showBlog = true
     showQr = true
+    relativeURLs = true
 
 [[params.handles]]
     name = "LinkedIn"
