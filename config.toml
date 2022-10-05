@@ -6,6 +6,7 @@ enableGitInfo = true
 PygmentsCodeFences = true
 PygmentsCodeFencesGuessSyntax = true
 PygmentsStyle = "monokai"
+relativeURLs = true
 
 [params]
     firstName = "Michael"
@@ -26,7 +27,7 @@ PygmentsStyle = "monokai"
     showEducation = true
     showBlog = true
     showQr = true
-    relativeURLs = true
+
 
 [[params.handles]]
     name = "LinkedIn"
