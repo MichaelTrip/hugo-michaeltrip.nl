@@ -1,7 +1,7 @@
 baseURL = "https://michaeltrip.nl"
 languageCode = "en-us"
 title = "Michaeltrip.nl :: Open Source Consultant"
-theme = "hugo-resume"
+theme = "hugo-resume-orginial"
 enableGitInfo = true
 PygmentsCodeFences = true
 PygmentsCodeFencesGuessSyntax = true
