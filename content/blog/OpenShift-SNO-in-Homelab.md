@@ -122,7 +122,9 @@ After that, we can login into the `assisted-service` web interface by visiting t
 
 After logging in on the web interface, you will see a nice interface:
 
-![screen1](/img/blog20220510/screen1.png)
+
+{{< figure src="/img/blog20220510/screen1.png" alt="screen1" width="960px" >}}
+
 
 click on `Create New Cluster`
 
@@ -132,7 +134,8 @@ Also make sure to check the box `Install single node OpenShift (SNO)`
 
 After that, insert the pull secret for the Red Hat container registry. Your pull secret can be retrieved from the https://cloud.redhat.com/openshift/create/local url. Login with your Red Hat credentials. After that, you will be prompted with something like this:
 
-![screen2](/img/blog20220510/screen2.png)
+
+{{< figure src="/img/blog20220510/screen2.png" alt="screen2" width="960px" >}}
 
 Click on `Copy pull secret` and paste it into the assisted installer screen.
 
@@ -142,12 +145,12 @@ After that, click Next. After that, you will see the `Operators` section. We are
 
 After clicking next, you will see the Host discovery screen. Click on the `Add Host` button. In this menu you can paste your SSH key. Insert your SSH key and choose the `minimal image file`. After that, you can click the `Generate Discovery ISO` Button. Now the magic will happen ;-).
 
-![screen3](/img/blog20220510/screen3.png)
+{{< figure src="/img/blog20220510/screen3.png" alt="screen3" >}}
 
 At this point, the assisted installer generated a iso that can be used for provisioning the Openshift node.
 
-![screen4](/img/blog20220510/screen4.png)
 
+{{< figure src="/img/blog20220510/screen4.png" alt="screen4" >}}
 
 Download the ISO by either copying the url or the wget command into your terminal and save the iso. Make sure to save it somewhere where you can mount it on your hypervisor.
 
@@ -156,15 +159,18 @@ Download the ISO by either copying the url or the wget command into your termina
 
 At this point we are ready to boot the VM with the ISO attached. In this example i will use Proxmox, as this is my Hypervisor in my homelab.
 
-![screen5](/img/blog20220510/screen5.png)
+
+{{< figure src="/img/blog20220510/screen5.png" alt="screen5" >}}
+
 
 The VM will boot and will call home to the assisted installer service with the provisioned agent on the ISO.
 
-![screen6](/img/blog20220510/screen6.png)
+{{< figure src="/img/blog20220510/screen6.png" alt="screen6" >}}
+
 
 After some time the node will appear in the web ui from the assisted installer:
 
-![screen7](/img/blog20220510/screen7.png)
+{{< figure src="/img/blog20220510/screen7.png" alt="screen7" width="960px" >}}
 
 After that, we can click Next. The following screen tells you your disks will be formatted.
 
@@ -172,20 +178,20 @@ Click Next to continue. The following screen will have some network information.
 
 Now, you will be presented with the summary screen:
 
-![screen8](/img/blog20220510/screen8.png)
+{{< figure src="/img/blog20220510/screen8.png" alt="screen8" width="960px" >}}
 
 Click on `Install cluster`.
 
 After that, you can monitor your progress:
 
-![screen9](/img/blog20220510/screen9.png)
+{{< figure src="/img/blog20220510/screen9.png" alt="screen9" width="960px" >}}
 
 The complete installation will take up to 60 minutes on modern hardware. Grab a cup of coffee and wait some time ;-)
 
 
 After waiting, you will be presented with this screen:
 
-![screen10](/img/blog20220510/screen10.png)
+{{< figure src="/img/blog20220510/screen10.png" alt="screen10" width="960px" >}}
 
 You will see some information on your screen including the console url and the credentials for the `kubeadmin` user.
 
@@ -196,7 +202,7 @@ After clicking the console url you will encounter some self-signed certificate e
 
 after logging in with the `kubeadmin` user we can see the shiny web interface of OKD.
 
-![screen11](/img/blog20220510/screen11.png)
+{{< figure src="/img/blog20220510/screen11.png" alt="screen11" width="960px" >}}
 
 And there it is, your own single node OpenShift / OKD cluster. You can do everything with it, except one thing: upgrading to a new release. That is not possible.
 
