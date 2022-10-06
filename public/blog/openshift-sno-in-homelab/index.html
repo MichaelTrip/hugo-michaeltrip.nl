@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Michaeltrip.nl :: Open Source Consultant | Setting up Openshift single node in your own Homelab</title>
+  <meta property="og:title" content="Michaeltrip.nl :: Open Source Consultant | Setting up Openshift single node in your own Homelab" />
+  <meta property="og:image" content="https://michaeltrip.nl/img/myownface.jpg" />
+  <meta name="description" content="">
+  <meta property="og:description" content="" />
+  <meta name="author" content="Michael Trip">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900&display=swap">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap">
+  <link rel="preload" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css" integrity="sha512-JW3fT0YTK7pT7w437SoX6GcW76jOZ6E0jGmrqBAcloC4GKT+njHOY4fX5KxJ9WfIXTkNrAF994525fAHp+KCxg==" crossorigin="anonymous" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css" integrity="sha512-JW3fT0YTK7pT7w437SoX6GcW76jOZ6E0jGmrqBAcloC4GKT+njHOY4fX5KxJ9WfIXTkNrAF994525fAHp+KCxg==" crossorigin="anonymous">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw==" crossorigin="anonymous" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw==" crossorigin="anonymous">
+  
+  <link rel="preload" href="https://michaeltrip.nl/css/resume.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://michaeltrip.nl/css/resume.css">
+  <link rel="preload" href="https://michaeltrip.nl/css/tweaks.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://michaeltrip.nl/css/tweaks.css">
+  <link rel="preload" href="https://michaeltrip.nl/css/resume-override.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://michaeltrip.nl/css/resume-override.css">
+  <meta name="generator" content="Hugo 0.99.1" />
+  
+   
+  
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none">Michael Trip</span>
+    <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="../../img/myownface.jpg" alt="">
+    </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="../../#about">About</a>
+      </li>
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="../../#skills">Skills</a>
+          </li>
+      
+      
+      
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="../../#experience">Experience</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="../../#education">Education</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="../../blog">Blog</a>
+          </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <div class="container-fluid p-0">
+    
+<nav aria-label="breadcrumb">
+  <ol  class="breadcrumb">
+    
+
+
+
+
+
+<li class="breadcrumb-item">
+  <a href="https://michaeltrip.nl/">Home</a>
+</li>
+
+
+<li class="breadcrumb-item">
+  <a href="https://michaeltrip.nl/blog/">Blog</a>
+</li>
+
+
+<li class="breadcrumb-item active">
+  <a href="https://michaeltrip.nl/blog/openshift-sno-in-homelab/">Setting up Openshift single node in your own Homelab</a>
+</li>
+
+  </ol>
+</nav>
+
+
+
+
+<section class="resume-section p-3 p-lg-5 d-flex flex-column">
+  <div class="my-auto">
+  	<div class="mb-3 d-flex flex-row justify-content-between">
+    	<h2 class="mb-0"><span class="text-primary">Setting up Openshift single node in your own Homelab</span></h2>
+    	<span class="">October 6, 2022</span>
+    </div>
+    <div>
+    	<h2 id="intro">Intro</h2>
+<p>So i wanted to run OpenShift in my Homelab. Why? Because i can, and i had some spare time ;-).</p>
+<p>For a long i wanted to setup a Openshift cluster in my own Homelab. Due to resource limitations i can only run one Openshift node. After many moons of searching and testing, i have found a very convinient way to enroll a single node OpenShift 4.11 (OKD) in my Homelab.</p>
+<h1 id="preperations">Preperations</h1>
+<p>First, there are some preperations to be done;</p>
+<ol>
+<li>A machine that can run <code>podman</code>, in my case i have a separate VM called <code>okd4-services</code> which hosts my <code>podman</code> pods.</li>
+<li>A virtual machine with the following specifications (this is what i have observed as the absolute minimum):
+<ol>
+<li>8 vCPU&rsquo;s</li>
+<li>24 GB (!!) of memory</li>
+<li>100GB disk</li>
+</ol>
+</li>
+<li>If possible, a DHCP reservation on the mac address of the VM.</li>
+<li>A dns zone that you can use in your own homelab, because OpenShift heavily relies on DNS. This is the dump of my DNS zone called <code>okd.alcatrash.net</code>.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ORIGIN .
+</span></span><span style="display:flex;"><span>okd.alcatrash.net       3600    IN      SOA     ns1.alcatrash.org hostmaster.okd.alcatrash.net 2022090510 10800 3600 604800 3600
+</span></span><span style="display:flex;"><span>_etcd-server-ssl._tcp.okd.alcatrash.net 60      IN      SRV     0 10 2380 etcd-0.okd.alcatrash.net
+</span></span><span style="display:flex;"><span>api.okd.alcatrash.net   60      IN      A       10.99.1.201
+</span></span><span style="display:flex;"><span>api-int.okd.alcatrash.net       60      IN      A       10.99.1.201
+</span></span><span style="display:flex;"><span>*.apps.okd.alcatrash.net        60      IN      A       10.99.1.201
+</span></span><span style="display:flex;"><span>console-openshift-console.apps.okd.alcatrash.net        60      IN      A       10.99.1.201
+</span></span><span style="display:flex;"><span>oauth-openshift.apps.okd.alcatrash.net  60      IN      A       10.99.1.201
+</span></span><span style="display:flex;"><span>console.okd.alcatrash.net       60      IN      A       10.99.1.201
+</span></span><span style="display:flex;"><span>console-openshift-console.okd.alcatrash.net     60      IN      A       10.99.1.201
+</span></span><span style="display:flex;"><span>etcd-0.okd.alcatrash.net        60      IN      A       10.99.1.201
+</span></span><span style="display:flex;"><span>okd4-control-plane-1.okd.alcatrash.net  60      IN      A       10.99.1.201
+</span></span><span style="display:flex;"><span>okd4-services.okd.alcatrash.net 60      IN      A       10.99.1.210
+</span></span></code></pre></div><p>As you can see we have several dns entries; 2 times a <code>A</code> record for the hosts <code>okd4-services</code> and the <code>okd4-control-plane-1</code>. The rest are mandatory DNS records needed for OpenShift to work properly. You can take a look <a href="https://docs.openshift.com/container-platform/4.11/installing/installing_on_prem_assisted/assisted-installer-preparing-to-install.html#networking">here</a> for more information.</p>
+<ol start="5">
+<li>The <code>podman</code> host must be reachable from the OpenShift node.</li>
+</ol>
+<h1 id="starting-the-openshift-assisted-installer">Starting the OpenShift Assisted installer</h1>
+<p>So first, login to your <code>podman</code> node. After that, clone the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>michael@okd4-services ~<span style="color:#f92672">]</span>$ git clone https://github.com/openshift/assisted-service.git
+</span></span><span style="display:flex;"><span>Cloning into <span style="color:#e6db74">&#39;assisted-service&#39;</span>...
+</span></span><span style="display:flex;"><span>remote: Enumerating objects: 60092, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>remote: Counting objects: 100% <span style="color:#f92672">(</span>24/24<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>remote: Compressing objects: 100% <span style="color:#f92672">(</span>23/23<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>remote: Total <span style="color:#ae81ff">60092</span> <span style="color:#f92672">(</span>delta 5<span style="color:#f92672">)</span>, reused <span style="color:#ae81ff">10</span> <span style="color:#f92672">(</span>delta 0<span style="color:#f92672">)</span>, pack-reused <span style="color:#ae81ff">60068</span>
+</span></span><span style="display:flex;"><span>Receiving objects: 100% <span style="color:#f92672">(</span>60092/60092<span style="color:#f92672">)</span>, 67.53 MiB | 8.06 MiB/s, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Resolving deltas: 100% <span style="color:#f92672">(</span>41319/41319<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Updating files: 100% <span style="color:#f92672">(</span>12157/12157<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>michael@okd4-services ~<span style="color:#f92672">]</span>$
+</span></span></code></pre></div><p>After that, cd into the <code>assisted-service/deploy/podman</code> directory.</p>
+<p>after that, take a look in the directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>michael@okd4-services podman<span style="color:#f92672">]</span>$ ls -lah
+</span></span><span style="display:flex;"><span>total 44K
+</span></span><span style="display:flex;"><span>drwxrwxr-x.  <span style="color:#ae81ff">2</span> michael michael  <span style="color:#ae81ff">185</span> Oct  <span style="color:#ae81ff">5</span> 21:38 .
+</span></span><span style="display:flex;"><span>drwxrwxr-x. <span style="color:#ae81ff">12</span> michael michael 4.0K Oct  <span style="color:#ae81ff">5</span> 21:38 ..
+</span></span><span style="display:flex;"><span>-rw-rw-r--.  <span style="color:#ae81ff">1</span> michael michael  <span style="color:#ae81ff">249</span> Oct  <span style="color:#ae81ff">5</span> 21:38 configmap_tls_certs.yml
+</span></span><span style="display:flex;"><span>-rw-rw-r--.  <span style="color:#ae81ff">1</span> michael michael 2.8K Oct  <span style="color:#ae81ff">5</span> 21:38 configmap_tls.yml
+</span></span><span style="display:flex;"><span>-rw-rw-r--.  <span style="color:#ae81ff">1</span> michael michael 4.6K Oct  <span style="color:#ae81ff">5</span> 21:38 configmap.yml
+</span></span><span style="display:flex;"><span>-rw-rw-r--.  <span style="color:#ae81ff">1</span> michael michael 1.8K Oct  <span style="color:#ae81ff">5</span> 21:38 okd-configmap.yml
+</span></span><span style="display:flex;"><span>-rw-rw-r--.  <span style="color:#ae81ff">1</span> michael michael 1.1K Oct  <span style="color:#ae81ff">5</span> 21:38 pod-persistent.yml
+</span></span><span style="display:flex;"><span>-rw-rw-r--.  <span style="color:#ae81ff">1</span> michael michael 1.6K Oct  <span style="color:#ae81ff">5</span> 21:38 pod_tls.yml
+</span></span><span style="display:flex;"><span>-rw-rw-r--.  <span style="color:#ae81ff">1</span> michael michael  <span style="color:#ae81ff">810</span> Oct  <span style="color:#ae81ff">5</span> 21:38 pod.yml
+</span></span><span style="display:flex;"><span>-rw-rw-r--.  <span style="color:#ae81ff">1</span> michael michael 4.7K Oct  <span style="color:#ae81ff">5</span> 21:38 README.md
+</span></span></code></pre></div><p>Here is a file we need to edit.</p>
+<p>Edit the <code>okd-configmap.yml</code> and replace the <code>ASSISTED_SERVICE_HOST</code>, <code>IMAGE_SERVICE_BASE_URL</code> and the <code>SERVICE_BASE_URL</code> variables with the ip address of your host where you run the podman pods on.</p>
+<p>In my case, it looks something like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>[<span style="color:#ae81ff">michael@okd4-services podman]$ cat okd-configmap.yml</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">ConfigMap</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">config</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">data</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">ASSISTED_SERVICE_HOST</span>: <span style="color:#ae81ff">10.99.1.210</span>:<span style="color:#ae81ff">8090</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">IMAGE_SERVICE_BASE_URL</span>: <span style="color:#ae81ff">http://10.99.1.210:8888</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">SERVICE_BASE_URL</span>: <span style="color:#ae81ff">http://10.99.1.210:8090</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">ASSISTED_SERVICE_SCHEME</span>: <span style="color:#ae81ff">http</span>
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><p>After that, the <code>README.md</code> states we need to run the following command for the <code>podman</code> pods to start. <code>podman play kube --configmap okd-configmap.yml pod.yml</code>
+This run will be without data persistence. Should you require data persistence, than take a look in the <code>README.md</code> on how to proceed.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>michael@okd4-services podman<span style="color:#f92672">]</span>$ podman play kube --configmap okd-configmap.yml pod.yml
+</span></span><span style="display:flex;"><span>Trying to pull quay.io/centos7/postgresql-12-centos7:latest...
+</span></span><span style="display:flex;"><span>Getting image source signatures
+</span></span><span style="display:flex;"><span>....
+</span></span><span style="display:flex;"><span>Containers:
+</span></span><span style="display:flex;"><span>0f00fac2dfbcc183270210bb0a689ac3ddf9f22f2a98aa49a526f01368ba9a2e
+</span></span><span style="display:flex;"><span>f00ff1daf4a5b869badec77c4931f1496d95eac86be29f6f06404d83ace5f6f4
+</span></span><span style="display:flex;"><span>75dc84c2d958f6716c66c449a7ec46a36ac556df2e60e6e155412b5741829a50
+</span></span><span style="display:flex;"><span>8b1a32f5055e85ba12a62b86c93a070f349906ddfe8cfc903771b5d37db8cedd
+</span></span></code></pre></div><p>After that, we can login into the <code>assisted-service</code> web interface by visiting the url where the pod was started. In my case this is http://10.99.1.210:8080.</p>
+<h1 id="creating-a-cluster-in-the-assisted-service--installer">Creating a cluster in the Assisted service / installer</h1>
+<p>After logging in on the web interface, you will see a nice interface:</p>
+<p><img src="../../img/blog20220510/screen1.png" alt="screen1"></p>
+<p>click on <code>Create New Cluster</code></p>
+<p>Now you will be shown a screen where you can setup the cluster. Make sure to enter the correct <code>Cluster Name</code> corresponding with your DNS zone. In my case my cluster name will be <code>okd</code> and my base domain will be <code>alcatrash.net</code>.</p>
+<p>Also make sure to check the box <code>Install single node OpenShift (SNO)</code></p>
+<p>After that, insert the pull secret for the Red Hat container registry. Your pull secret can be retrieved from the <a href="https://cloud.redhat.com/openshift/create/local">https://cloud.redhat.com/openshift/create/local</a> url. Login with your Red Hat credentials. After that, you will be prompted with something like this:</p>
+<p><img src="../../img/blog20220510/screen2.png" alt="screen2"></p>
+<p>Click on <code>Copy pull secret</code> and paste it into the assisted installer screen.</p>
+<p>After that, you can choose for <code>Host networking</code> either DHCP or Static. In this example i have created a DHCP lease for my Openshift node in my router, so i will choose DHCP here.</p>
+<p>After that, click Next. After that, you will see the <code>Operators</code> section. We are not going to use any operators from here, so click Next.</p>
+<p>After clicking next, you will see the Host discovery screen. Click on the <code>Add Host</code> button. In this menu you can paste your SSH key. Insert your SSH key and choose the <code>minimal image file</code>. After that, you can click the <code>Generate Discovery ISO</code> Button. Now the magic will happen ;-).</p>
+<p><img src="../../img/blog20220510/screen3.png" alt="screen3"></p>
+<p>At this point, the assisted installer generated a iso that can be used for provisioning the Openshift node.</p>
+<p><img src="../../img/blog20220510/screen4.png" alt="screen4"></p>
+<p>Download the ISO by either copying the url or the wget command into your terminal and save the iso. Make sure to save it somewhere where you can mount it on your hypervisor.</p>
+<h1 id="booting-your-vm-with-the-iso">Booting your VM with the ISO</h1>
+<p>At this point we are ready to boot the VM with the ISO attached. In this example i will use Proxmox, as this is my Hypervisor in my homelab.</p>
+<p><img src="../../img/blog20220510/screen5.png" alt="screen5"></p>
+<p>The VM will boot and will call home to the assisted installer service with the provisioned agent on the ISO.</p>
+<p><img src="../../img/blog20220510/screen6.png" alt="screen6"></p>
+<p>After some time the node will appear in the web ui from the assisted installer:</p>
+<p><img src="../../img/blog20220510/screen7.png" alt="screen7"></p>
+<p>After that, we can click Next. The following screen tells you your disks will be formatted.</p>
+<p>Click Next to continue. The following screen will have some network information. You can take a look at it, after that, hit Next.</p>
+<p>Now, you will be presented with the summary screen:</p>
+<p><img src="../../img/blog20220510/screen8.png" alt="screen8"></p>
+<p>Click on <code>Install cluster</code>.</p>
+<p>After that, you can monitor your progress:</p>
+<p><img src="../../img/blog20220510/screen9.png" alt="screen9"></p>
+<p>The complete installation will take up to 60 minutes on modern hardware. Grab a cup of coffee and wait some time ;-)</p>
+<p>After waiting, you will be presented with this screen:</p>
+<p><img src="../../img/blog20220510/screen10.png" alt="screen10"></p>
+<p>You will see some information on your screen including the console url and the credentials for the <code>kubeadmin</code> user.</p>
+<h1 id="done-what-now-">Done, what now ?</h1>
+<p>After clicking the console url you will encounter some self-signed certificate errors. Ignore these, because it is your homelab ;-).</p>
+<p>after logging in with the <code>kubeadmin</code> user we can see the shiny web interface of OKD.</p>
+<p><img src="../../img/blog20220510/screen11.png" alt="screen11"></p>
+<p>And there it is, your own single node OpenShift / OKD cluster. You can do everything with it, except one thing: upgrading to a new release. That is not possible.</p>
+<p>Have fun! And if you have any questions, please contact me through email / linkedin / github or whatever ;-)</p>
+
+	    
+	    	<p>Project link: <a href="../../blog/openshift-sno-in-homelab/">/blog/openshift-sno-in-homelab/</a></p>
+	</div>
+    <div>
+    	
+    </div>
+    <ul class="tags">
+    
+</ul>
+
+  </div>
+</section>
+
+
+    <span style="color: #999999; font-size: 60%;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> </span>
+    
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" crossorigin="anonymous"></script>
+  
+  <script async src="../../js/resume.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '');
+  </script>
+  
+  <a href='http://ipv6-test.com'><img src='http://v4v6.ipv6-test.com/imgtest.png' alt='ipv6 test' title='ipv6 test' border='0' /></a>
+
+  
+
+</body>
+</html>
