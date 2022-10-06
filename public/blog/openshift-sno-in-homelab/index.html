@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="https://michaeltrip.nl/css/tweaks.css">
   <link rel="preload" href="https://michaeltrip.nl/css/resume-override.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="https://michaeltrip.nl/css/resume-override.css">
-  <meta name="generator" content="Hugo 0.99.1" />
+  <meta name="generator" content="Hugo 0.102.3" />
   
    
   
@@ -202,42 +202,75 @@ This run will be without data persistence. Should you require data persistence, 
 </span></span></code></pre></div><p>After that, we can login into the <code>assisted-service</code> web interface by visiting the url where the pod was started. In my case this is http://10.99.1.210:8080.</p>
 <h2 id="creating-a-cluster-in-the-assisted-service--installer">Creating a cluster in the Assisted service / installer</h2>
 <p>After logging in on the web interface, you will see a nice interface:</p>
-<p><img src="../../img/blog20220510/screen1.png" alt="screen1"></p>
+<figure><img src="../../img/blog20220510/screen1.png"
+         alt="screen1" width="960px"/>
+</figure>
+
 <p>click on <code>Create New Cluster</code></p>
 <p>Now you will be shown a screen where you can setup the cluster. Make sure to enter the correct <code>Cluster Name</code> corresponding with your DNS zone. In my case my cluster name will be <code>okd</code> and my base domain will be <code>alcatrash.net</code>.</p>
 <p>Also make sure to check the box <code>Install single node OpenShift (SNO)</code></p>
 <p>After that, insert the pull secret for the Red Hat container registry. Your pull secret can be retrieved from the <a href="https://cloud.redhat.com/openshift/create/local">https://cloud.redhat.com/openshift/create/local</a> url. Login with your Red Hat credentials. After that, you will be prompted with something like this:</p>
-<p><img src="../../img/blog20220510/screen2.png" alt="screen2"></p>
+<figure><img src="../../img/blog20220510/screen2.png"
+         alt="screen2" width="960px"/>
+</figure>
+
 <p>Click on <code>Copy pull secret</code> and paste it into the assisted installer screen.</p>
 <p>After that, you can choose for <code>Host networking</code> either DHCP or Static. In this example i have created a DHCP lease for my Openshift node in my router, so i will choose DHCP here.</p>
 <p>After that, click Next. After that, you will see the <code>Operators</code> section. We are not going to use any operators from here, so click Next.</p>
 <p>After clicking next, you will see the Host discovery screen. Click on the <code>Add Host</code> button. In this menu you can paste your SSH key. Insert your SSH key and choose the <code>minimal image file</code>. After that, you can click the <code>Generate Discovery ISO</code> Button. Now the magic will happen ;-).</p>
-<p><img src="../../img/blog20220510/screen3.png" alt="screen3"></p>
+<figure><img src="../../img/blog20220510/screen3.png"
+         alt="screen3"/>
+</figure>
+
 <p>At this point, the assisted installer generated a iso that can be used for provisioning the Openshift node.</p>
-<p><img src="../../img/blog20220510/screen4.png" alt="screen4"></p>
+<figure><img src="../../img/blog20220510/screen4.png"
+         alt="screen4"/>
+</figure>
+
 <p>Download the ISO by either copying the url or the wget command into your terminal and save the iso. Make sure to save it somewhere where you can mount it on your hypervisor.</p>
 <h2 id="booting-your-vm-with-the-iso">Booting your VM with the ISO</h2>
 <p>At this point we are ready to boot the VM with the ISO attached. In this example i will use Proxmox, as this is my Hypervisor in my homelab.</p>
-<p><img src="../../img/blog20220510/screen5.png" alt="screen5"></p>
+<figure><img src="../../img/blog20220510/screen5.png"
+         alt="screen5"/>
+</figure>
+
 <p>The VM will boot and will call home to the assisted installer service with the provisioned agent on the ISO.</p>
-<p><img src="../../img/blog20220510/screen6.png" alt="screen6"></p>
+<figure><img src="../../img/blog20220510/screen6.png"
+         alt="screen6"/>
+</figure>
+
 <p>After some time the node will appear in the web ui from the assisted installer:</p>
-<p><img src="../../img/blog20220510/screen7.png" alt="screen7"></p>
+<figure><img src="../../img/blog20220510/screen7.png"
+         alt="screen7" width="960px"/>
+</figure>
+
 <p>After that, we can click Next. The following screen tells you your disks will be formatted.</p>
 <p>Click Next to continue. The following screen will have some network information. You can take a look at it, after that, hit Next.</p>
 <p>Now, you will be presented with the summary screen:</p>
-<p><img src="../../img/blog20220510/screen8.png" alt="screen8"></p>
+<figure><img src="../../img/blog20220510/screen8.png"
+         alt="screen8" width="960px"/>
+</figure>
+
 <p>Click on <code>Install cluster</code>.</p>
 <p>After that, you can monitor your progress:</p>
-<p><img src="../../img/blog20220510/screen9.png" alt="screen9"></p>
+<figure><img src="../../img/blog20220510/screen9.png"
+         alt="screen9" width="960px"/>
+</figure>
+
 <p>The complete installation will take up to 60 minutes on modern hardware. Grab a cup of coffee and wait some time ;-)</p>
 <p>After waiting, you will be presented with this screen:</p>
-<p><img src="../../img/blog20220510/screen10.png" alt="screen10"></p>
+<figure><img src="../../img/blog20220510/screen10.png"
+         alt="screen10" width="960px"/>
+</figure>
+
 <p>You will see some information on your screen including the console url and the credentials for the <code>kubeadmin</code> user.</p>
 <h2 id="done-what-now-">Done, what now ?</h2>
 <p>After clicking the console url you will encounter some self-signed certificate errors. Ignore these, because it is your homelab ;-).</p>
 <p>after logging in with the <code>kubeadmin</code> user we can see the shiny web interface of OKD.</p>
-<p><img src="../../img/blog20220510/screen11.png" alt="screen11"></p>
+<figure><img src="../../img/blog20220510/screen11.png"
+         alt="screen11" width="960px"/>
+</figure>
+
 <p>And there it is, your own single node OpenShift / OKD cluster. You can do everything with it, except one thing: upgrading to a new release. That is not possible.</p>
 <p>Have fun! And if you have any questions, please contact me through email / linkedin / github or whatever ;-)</p>
 
