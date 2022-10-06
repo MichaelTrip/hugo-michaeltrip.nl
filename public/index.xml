@@ -45,19 +45,13 @@
     </item>
     
     <item>
-      <title>Lorum Ipsum blogtest</title>
-      <link>https://michaeltrip.nl/blog/blogtest/</link>
-      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      <title>Setting up Openshift single node in your own Homelab</title>
+      <link>https://michaeltrip.nl/blog/openshift-sno-in-homelab/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://michaeltrip.nl/blog/blogtest/</guid>
-      <description>Intro Blog Test Blog Test Blog Test Blog Test Blog Test Blog Test Blog Test Blog Test
-Blog Test Blog Test Blog Test Blog Test
-Blog Test Blog Test Blog Test Blog Test
-Blog Test Blog Test Blog Test Blog Test
-Blog Test Blog Test Blog Test Blog Test
-Blog Test Blog Test Blog Test Blog Test
-Blog Test Blog Test Blog Test Blog Test
-Blog Test Blog Test Blog Test Blog Test</description>
+      <guid>https://michaeltrip.nl/blog/openshift-sno-in-homelab/</guid>
+      <description>Intro So i wanted to run OpenShift in my Homelab. Why? Because i can, and i had some spare time ;-).
+For a long i wanted to setup a Openshift cluster in my own Homelab. Due to resource limitations i can only run one Openshift node. After many moons of searching and testing, i have found a very convinient way to enroll a single node OpenShift 4.11 (OKD) in my Homelab.</description>
     </item>
     
     <item>

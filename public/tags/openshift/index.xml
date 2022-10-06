@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blog on Michaeltrip.nl :: Open Source Consultant</title>
-    <link>https://michaeltrip.nl/tags/blog/</link>
-    <description>Recent content in blog on Michaeltrip.nl :: Open Source Consultant</description>
+    <title>openshift on Michaeltrip.nl :: Open Source Consultant</title>
+    <link>https://michaeltrip.nl/tags/openshift/</link>
+    <description>Recent content in openshift on Michaeltrip.nl :: Open Source Consultant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://michaeltrip.nl/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://michaeltrip.nl/tags/openshift/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting up Openshift single node in your own Homelab</title>
       <link>https://michaeltrip.nl/blog/openshift-sno-in-homelab/</link>
