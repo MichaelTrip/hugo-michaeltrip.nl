@@ -12,7 +12,7 @@ So i wanted to run OpenShift in my Homelab. Why? Because i can, and i had some s
 
 For a long i wanted to setup a Openshift cluster in my own Homelab. Due to resource limitations i can only run one Openshift node. After many moons of searching and testing, i have found a very convinient way to enroll a single node OpenShift 4.11 (OKD) in my Homelab.
 
-# Preperations
+## Preperations
 
 First, there are some preperations to be done;
 
@@ -118,7 +118,7 @@ f00ff1daf4a5b869badec77c4931f1496d95eac86be29f6f06404d83ace5f6f4
 
 After that, we can login into the `assisted-service` web interface by visiting the url where the pod was started. In my case this is http://10.99.1.210:8080.
 
-# Creating a cluster in the Assisted service / installer
+## Creating a cluster in the Assisted service / installer
 
 After logging in on the web interface, you will see a nice interface:
 
@@ -152,7 +152,7 @@ At this point, the assisted installer generated a iso that can be used for provi
 Download the ISO by either copying the url or the wget command into your terminal and save the iso. Make sure to save it somewhere where you can mount it on your hypervisor.
 
 
-# Booting your VM with the ISO
+## Booting your VM with the ISO
 
 At this point we are ready to boot the VM with the ISO attached. In this example i will use Proxmox, as this is my Hypervisor in my homelab.
 
@@ -189,7 +189,7 @@ After waiting, you will be presented with this screen:
 
 You will see some information on your screen including the console url and the credentials for the `kubeadmin` user.
 
-# Done, what now ?
+## Done, what now ?
 
 After clicking the console url you will encounter some self-signed certificate errors. Ignore these, because it is your homelab ;-).
 
