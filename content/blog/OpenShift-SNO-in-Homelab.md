@@ -43,7 +43,7 @@ As you can see we have several dns entries; 2 times a `A` record for the hosts `
 
 5. The `podman` host must be reachable from the OpenShift node.
 
-# Starting the OpenShift Assisted installer
+## Starting the OpenShift Assisted installer
 
 So first, login to your `podman` node. After that, clone the following:
 
