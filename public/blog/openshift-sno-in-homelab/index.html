@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="https://michaeltrip.nl/css/tweaks.css">
   <link rel="preload" href="https://michaeltrip.nl/css/resume-override.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="https://michaeltrip.nl/css/resume-override.css">
-  <meta name="generator" content="Hugo 0.99.1" />
+  <meta name="generator" content="Hugo 0.102.3" />
   
    
   
@@ -117,7 +117,7 @@
     	<h2 id="intro">Intro</h2>
 <p>So i wanted to run OpenShift in my Homelab. Why? Because i can, and i had some spare time ;-).</p>
 <p>For a long i wanted to setup a Openshift cluster in my own Homelab. Due to resource limitations i can only run one Openshift node. After many moons of searching and testing, i have found a very convinient way to enroll a single node OpenShift 4.11 (OKD) in my Homelab.</p>
-<h1 id="preperations">Preperations</h1>
+<h2 id="preperations">Preperations</h2>
 <p>First, there are some preperations to be done;</p>
 <ol>
 <li>A machine that can run <code>podman</code>, in my case i have a separate VM called <code>okd4-services</code> which hosts my <code>podman</code> pods.</li>
@@ -200,7 +200,7 @@ This run will be without data persistence. Should you require data persistence, 
 </span></span><span style="display:flex;"><span>75dc84c2d958f6716c66c449a7ec46a36ac556df2e60e6e155412b5741829a50
 </span></span><span style="display:flex;"><span>8b1a32f5055e85ba12a62b86c93a070f349906ddfe8cfc903771b5d37db8cedd
 </span></span></code></pre></div><p>After that, we can login into the <code>assisted-service</code> web interface by visiting the url where the pod was started. In my case this is http://10.99.1.210:8080.</p>
-<h1 id="creating-a-cluster-in-the-assisted-service--installer">Creating a cluster in the Assisted service / installer</h1>
+<h2 id="creating-a-cluster-in-the-assisted-service--installer">Creating a cluster in the Assisted service / installer</h2>
 <p>After logging in on the web interface, you will see a nice interface:</p>
 <p><img src="../../img/blog20220510/screen1.png" alt="screen1"></p>
 <p>click on <code>Create New Cluster</code></p>
@@ -216,7 +216,7 @@ This run will be without data persistence. Should you require data persistence, 
 <p>At this point, the assisted installer generated a iso that can be used for provisioning the Openshift node.</p>
 <p><img src="../../img/blog20220510/screen4.png" alt="screen4"></p>
 <p>Download the ISO by either copying the url or the wget command into your terminal and save the iso. Make sure to save it somewhere where you can mount it on your hypervisor.</p>
-<h1 id="booting-your-vm-with-the-iso">Booting your VM with the ISO</h1>
+<h2 id="booting-your-vm-with-the-iso">Booting your VM with the ISO</h2>
 <p>At this point we are ready to boot the VM with the ISO attached. In this example i will use Proxmox, as this is my Hypervisor in my homelab.</p>
 <p><img src="../../img/blog20220510/screen5.png" alt="screen5"></p>
 <p>The VM will boot and will call home to the assisted installer service with the provisioned agent on the ISO.</p>
@@ -234,7 +234,7 @@ This run will be without data persistence. Should you require data persistence, 
 <p>After waiting, you will be presented with this screen:</p>
 <p><img src="../../img/blog20220510/screen10.png" alt="screen10"></p>
 <p>You will see some information on your screen including the console url and the credentials for the <code>kubeadmin</code> user.</p>
-<h1 id="done-what-now-">Done, what now ?</h1>
+<h2 id="done-what-now-">Done, what now ?</h2>
 <p>After clicking the console url you will encounter some self-signed certificate errors. Ignore these, because it is your homelab ;-).</p>
 <p>after logging in with the <code>kubeadmin</code> user we can see the shiny web interface of OKD.</p>
 <p><img src="../../img/blog20220510/screen11.png" alt="screen11"></p>
