@@ -15,7 +15,7 @@
       <guid>https://michaeltrip.nl/blog/deploy-okd-gcp/</guid>
       <description>Intro After trying to create a SNO Openshift Node in my Homelab, it was time to scale it up even further and trying to create a OpenShift cluster in the cloud. For this use case i will be using GCP.
 Preperations First, there are some preperations to be done;
-A service account in GCP with a lot of permissions in GCP Enable certain API&amp;rsquo;s in GCP A Managed DNS zone in GCP Both the oc binary and the openshift-install binary.</description>
+ A service account in GCP with a lot of permissions in GCP Enable certain API&amp;rsquo;s in GCP A Managed DNS zone in GCP Both the oc binary and the openshift-install binary.</description>
     </item>
     
     <item>
