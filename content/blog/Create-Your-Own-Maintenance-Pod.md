@@ -8,7 +8,7 @@ tags: [blog, pvc, kubernetes, cloud]
 Intro
 -----
 
-So the other day i tried to update my k3s cluster running at the Oracle Clud. Somehow, my Postgres `statefulset` crashed and the `postmaster.pid` file was not removed properly. Anyway, the pod was restarted but was now in a `CrashLoopBackOff` stage. The error message stated that the lock file couldn´t be removed. So how do you remove a file from a `PersistentVolumeClaim` with the container constantly restarting? I found something.
+So the other day i tried to update my k3s cluster running at the Oracle Cloud. Somehow, my Postgres `statefulset` crashed and the `postmaster.pid` file was not removed properly. Anyway, the pod was restarted but was now in a `CrashLoopBackOff` stage. The error message stated that the lock file couldn´t be removed. So how do you remove a file from a `PersistentVolumeClaim` with the container constantly restarting? I found something.
 
 ## `CrashLoopBackOff`
 

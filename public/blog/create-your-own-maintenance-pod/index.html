@@ -115,7 +115,7 @@
     </div>
     <div>
     	<h2 id="intro">Intro</h2>
-<p>So the other day i tried to update my k3s cluster running at the Oracle Clud. Somehow, my Postgres <code>statefulset</code> crashed and the <code>postmaster.pid</code> file was not removed properly. Anyway, the pod was restarted but was now in a <code>CrashLoopBackOff</code> stage. The error message stated that the lock file couldn´t be removed. So how do you remove a file from a <code>PersistentVolumeClaim</code> with the container constantly restarting? I found something.</p>
+<p>So the other day i tried to update my k3s cluster running at the Oracle Cloud. Somehow, my Postgres <code>statefulset</code> crashed and the <code>postmaster.pid</code> file was not removed properly. Anyway, the pod was restarted but was now in a <code>CrashLoopBackOff</code> stage. The error message stated that the lock file couldn´t be removed. So how do you remove a file from a <code>PersistentVolumeClaim</code> with the container constantly restarting? I found something.</p>
 <h2 id="crashloopbackoff"><code>CrashLoopBackOff</code></h2>
 <p>The <code>CrashLoopBackOff</code> status of a pod is a nasty one. You have to look at the log files if you would like to know more. So in my case i had to look at the postgres logs:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> k logs -n postgres postgres-0
