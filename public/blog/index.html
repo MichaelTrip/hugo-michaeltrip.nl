@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="https://michaeltrip.nl/css/tweaks.css">
   <link rel="preload" href="https://michaeltrip.nl/css/resume-override.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="https://michaeltrip.nl/css/resume-override.css">
-  <meta name="generator" content="Hugo 0.99.1" />
+  <meta name="generator" content="Hugo 0.104.3" />
   
    
   
@@ -110,10 +110,28 @@
         
 <div class="resume-item d-flex flex-row mb-5">
   <div class="publication-content mr-auto">
+    <h3 class="mb-0"><a href="../blog/create-your-own-maintenance-pod/">Create your own maintenance pod</a></h3>
+    <div>Intro So the other day i tried to update my k3s cluster running at the Oracle Clud. Somehow, my Postgres statefulset crashed and the postmaster.pid file was not removed properly. Anyway, the pod was restarted but was now in a CrashLoopBackOff stage. The error message stated that the lock file couldn´t be removed. So how do you remove a file from a PersistentVolumeClaim with the container constantly restarting? I found something.</div>
+    <div><ul class="tags">
+    
+</ul>
+</div>
+  </div>
+  <div class="resume-date text-md-right flex-col">
+    <span class="text-primary">November 9, 2022</span>
+  </div>
+</div>
+
+      
+    
+      
+        
+<div class="resume-item d-flex flex-row mb-5">
+  <div class="publication-content mr-auto">
     <h3 class="mb-0"><a href="../blog/deploy-okd-gcp/">Deploying OpenShift OKD in GCP (Google Cloud)</a></h3>
     <div>Intro After trying to create a SNO Openshift Node in my Homelab, it was time to scale it up even further and trying to create a OpenShift cluster in the cloud. For this use case i will be using GCP.
 Preperations First, there are some preperations to be done;
- A service account in GCP with a lot of permissions in GCP Enable certain API&rsquo;s in GCP A Managed DNS zone in GCP Both the oc binary and the openshift-install binary.</div>
+A service account in GCP with a lot of permissions in GCP Enable certain API&rsquo;s in GCP A Managed DNS zone in GCP Both the oc binary and the openshift-install binary.</div>
     <div><ul class="tags">
     
 </ul>

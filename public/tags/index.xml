@@ -6,11 +6,11 @@
     <description>Recent content in Tags on Michaeltrip.nl :: Open Source Consultant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://michaeltrip.nl/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://michaeltrip.nl/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blog</title>
       <link>https://michaeltrip.nl/tags/blog/</link>
-      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://michaeltrip.nl/tags/blog/</guid>
       <description></description>
@@ -19,9 +19,27 @@
     <item>
       <title>cloud</title>
       <link>https://michaeltrip.nl/tags/cloud/</link>
-      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://michaeltrip.nl/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://michaeltrip.nl/tags/kubernetes/</link>
+      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pvc</title>
+      <link>https://michaeltrip.nl/tags/pvc/</link>
+      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/pvc/</guid>
       <description></description>
     </item>
     
@@ -31,15 +49,6 @@
       <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://michaeltrip.nl/tags/homelab/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kubernetes</title>
-      <link>https://michaeltrip.nl/tags/kubernetes/</link>
-      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://michaeltrip.nl/tags/kubernetes/</guid>
       <description></description>
     </item>
     

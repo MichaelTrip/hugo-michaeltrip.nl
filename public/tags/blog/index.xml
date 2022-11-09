@@ -6,7 +6,16 @@
     <description>Recent content in blog on Michaeltrip.nl :: Open Source Consultant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://michaeltrip.nl/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://michaeltrip.nl/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create your own maintenance pod</title>
+      <link>https://michaeltrip.nl/blog/create-your-own-maintenance-pod/</link>
+      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/blog/create-your-own-maintenance-pod/</guid>
+      <description>Intro So the other day i tried to update my k3s cluster running at the Oracle Clud. Somehow, my Postgres statefulset crashed and the postmaster.pid file was not removed properly. Anyway, the pod was restarted but was now in a CrashLoopBackOff stage. The error message stated that the lock file couldn´t be removed. So how do you remove a file from a PersistentVolumeClaim with the container constantly restarting? I found something.</description>
+    </item>
+    
     <item>
       <title>Deploying OpenShift OKD in GCP (Google Cloud)</title>
       <link>https://michaeltrip.nl/blog/deploy-okd-gcp/</link>
@@ -15,7 +24,7 @@
       <guid>https://michaeltrip.nl/blog/deploy-okd-gcp/</guid>
       <description>Intro After trying to create a SNO Openshift Node in my Homelab, it was time to scale it up even further and trying to create a OpenShift cluster in the cloud. For this use case i will be using GCP.
 Preperations First, there are some preperations to be done;
- A service account in GCP with a lot of permissions in GCP Enable certain API&amp;rsquo;s in GCP A Managed DNS zone in GCP Both the oc binary and the openshift-install binary.</description>
+A service account in GCP with a lot of permissions in GCP Enable certain API&amp;rsquo;s in GCP A Managed DNS zone in GCP Both the oc binary and the openshift-install binary.</description>
     </item>
     
     <item>
