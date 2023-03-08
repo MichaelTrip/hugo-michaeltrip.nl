@@ -1,5 +1,11 @@
 [
     {
+        "school":"[The Cloud Native Computing Foundation](https://www.credly.com/badges/b186a52e-6fa1-41f5-85f6-1db029688657/public_url)",
+        "degree":"CKS",
+        "major":"Certified Kubernetes Security Specialist",
+        "range":"2023"
+    },
+    {
         "school":"[Redhat Certification](https://www.credly.com/badges/c2a23139-a42a-4350-8981-ec7146bf3b43/public_url)",
         "degree":"RHCS on OpenShift 4.6",
         "major":"Red Hat® Certified Specialist in OpenShift Administration",
