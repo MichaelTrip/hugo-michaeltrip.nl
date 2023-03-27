@@ -36,6 +36,7 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          clean: false
 
       - uses: actions-ecosystem/action-get-latest-tag@v1
         id: get-latest-tag
@@ -55,6 +56,7 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          clean: false
           # ref: ${{ steps.bump-semver.outputs.new_version }}
 
       - name: Set up QEMU
