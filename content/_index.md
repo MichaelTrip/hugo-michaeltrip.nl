@@ -10,4 +10,4 @@ outputs:
 - json
 ---
 
-I am an experienced Linux sysadmin with a broad knowledge of Linux, networking and IT security. If you have any questions regarding my site, don't hesitate to contact me.
+I am a Experienced SRE / Devops Engineer with a proven knowledge of Cloud native and Kubernetes, networking and Linux in General. If you have any questions regarding my site, don't hesitate to contact me.
