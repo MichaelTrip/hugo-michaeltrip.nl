@@ -51,11 +51,11 @@ jobs:
           tag: ${{ steps.bump-semver.outputs.new_version }}
           message: '${{ steps.bump-semver.outputs.new_version }}: PR #${{ github.event.pull_request.number }} ${{ github.event.pull_request.title }}'
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-          ref: ${{ steps.bump-semver.outputs.new_version }}
+          # ref: ${{ steps.bump-semver.outputs.new_version }}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
