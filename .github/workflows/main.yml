@@ -34,6 +34,11 @@ jobs:
           branch: master
           repository: .
 
+      - uses: actions/checkout@v3
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
       - uses: actions-ecosystem/action-get-latest-tag@v1
         id: get-latest-tag
 
@@ -71,6 +76,8 @@ jobs:
           push: true
           tags: michaeltrip/hugo-michaeltrip.nl:${{ steps.bump-semver.outputs.new_version }},michaeltrip/hugo-michaeltrip.nl:latest
           platforms: arm64,amd64
+
+
 
       # - name: bump version for application in deployment manifest
       #   env:
