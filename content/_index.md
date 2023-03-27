@@ -10,6 +10,4 @@ outputs:
 - json
 ---
 
-I am a Experienced SRE / Devops Engineer with a proven knowledge of cloud native and Kubernetes and it's tooling, networking and Linux in general.
-
-If you have any questions regarding my site, don't hesitate to contact me.
+I am a Experienced SRE / Devops Engineer with a proven knowledge of cloud native and Kubernetes and it's tooling, networking and Linux in general. If you have any questions regarding my site, don't hesitate to contact me through e-mail or on Github.
