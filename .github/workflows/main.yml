@@ -32,10 +32,6 @@ jobs:
           branch: master
           repository: .
 
-  versioning:
-    runs-on: ubuntu-latest
-    steps:
-
       - uses: actions/checkout@v3
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
@@ -54,10 +50,6 @@ jobs:
         with:
           tag: ${{ steps.bump-semver.outputs.new_version }}
           message: '${{ steps.bump-semver.outputs.new_version }}: PR #${{ github.event.pull_request.number }} ${{ github.event.pull_request.title }}'
-
-  build-container:
-    runs-on: ubuntu-latest
-    steps:
 
       - uses: actions/checkout@v2
         with:
@@ -81,6 +73,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
+          context: .
           tags: michaeltrip/hugo-michaeltrip.nl:${{ steps.bump-semver.outputs.new_version }},michaeltrip/hugo-michaeltrip.nl:latest
           platforms: arm64,amd64
 
