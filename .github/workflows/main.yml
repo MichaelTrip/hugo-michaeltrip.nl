@@ -34,6 +34,12 @@ jobs:
           branch: master
           repository: .
 
+  versioning:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+
       - uses: actions/checkout@v3
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
@@ -53,6 +59,12 @@ jobs:
           tag: ${{ steps.bump-semver.outputs.new_version }}
           message: '${{ steps.bump-semver.outputs.new_version }}: PR #${{ github.event.pull_request.number }} ${{ github.event.pull_request.title }}'
 
+  build-container:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+
       - uses: actions/checkout@v2
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
@@ -70,6 +82,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
