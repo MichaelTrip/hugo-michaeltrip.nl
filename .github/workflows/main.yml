@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
@@ -26,22 +26,13 @@ jobs:
       - name: Build
         run: hugo
 
-      - name: Deploy
+      - name: commit
         uses: stefanzweifel/git-auto-commit-action@v4
         if: ${{ github.ref == 'refs/heads/master' }}
         with:
           commit_message: Automated Change
           branch: master
           repository: .
-
-
-  release:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - uses: actions-ecosystem/action-get-latest-tag@v1
         id: get-latest-tag
@@ -81,21 +72,21 @@ jobs:
           tags: michaeltrip/hugo-michaeltrip.nl:${{ steps.bump-semver.outputs.new_version }},michaeltrip/hugo-michaeltrip.nl:latest
           platforms: arm64,amd64
 
-      - name: bump version for application in deployment manifest
-        env:
-          GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
-          TAG: ${{ steps.bump-semver.outputs.new_version }}
-        run: |
-          git clone https://michael:$GITEA_TOKEN@git.alcatrash.net/michael/kubernetes.git
-          cd kubernetes
-          git config user.name "Github actions"
-          git config user.email "github-actions@alcatrash.org"
-          cd argocd/apps/hugo-michaeltrip.nl
+      # - name: bump version for application in deployment manifest
+      #   env:
+      #     GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
+      #     TAG: ${{ steps.bump-semver.outputs.new_version }}
+      #   run: |
+      #     git clone https://michael:$GITEA_TOKEN@git.alcatrash.net/michael/kubernetes.git
+      #     cd kubernetes
+      #     git config user.name "Github actions"
+      #     git config user.email "github-actions@alcatrash.org"
+      #     cd argocd/apps/hugo-michaeltrip.nl
 
-          sed -i "s/\(hugo-michaeltrip.nl:\).*/\1$TAG/g" deployment.yml
-          git add --all
-          git commit -m "updated manifest file. Bumped release to $TAG"
-          git push
+      #     sed -i "s/\(hugo-michaeltrip.nl:\).*/\1$TAG/g" deployment.yml
+      #     git add --all
+      #     git commit -m "updated manifest file. Bumped release to $TAG"
+      #     git push
 
 
 

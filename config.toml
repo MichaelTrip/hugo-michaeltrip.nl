@@ -16,7 +16,7 @@ relativeURLs = true
     contactNote = "Linux engineer"
     profileImage = "img/myownface.jpg"
     email = "michael@alcatrash.org"
-    description = "Experienced Linux Engineer with a wide experience including: Linux, networking and security"
+    description = "Experienced SRE / Devops Engineer with a proven knowledge of Cloud native and Kubernetes"
     favicon = "/favicon.ico"
     # what sections
     showSkills = true
