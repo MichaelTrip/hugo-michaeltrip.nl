@@ -2,7 +2,7 @@
     {
         "role":"Kubernetes Specialist",
         "company":"[Rijksinstituut voor Volksgezondheid en Milieu](https://rivm.nl) | Contracting",
-        "summary":"Consultant in Kubernetes:\n- Desigining Kubernetes cluster\n- Deploying Kubernetes cluster\n- Containerising applications\n- Creating usable Gitops Structures\n- Deploying Observability based on Prometheus\n- Deploying ArgoCD instance for both development and production",
+        "summary":"Consultant in Kubernetes:\n- Desigining Kubernetes clusters\n- Deploying Kubernetes clusters\n- Containerising applications\n- Creating usable Gitops Structures\n- Deploying Observability based on Prometheus\n- Deploying ArgoCD instance for both development and production",
         "range":"May 2022 - September 2023"
     },
     {
