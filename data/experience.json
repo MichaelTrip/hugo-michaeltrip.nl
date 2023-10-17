@@ -1,5 +1,17 @@
 [
     {
+        "role":"Kubernetes Specialist",
+        "company":"[Rijksinstituut voor Volksgezondheid en Milieu](https://rivm.nl) | Contracting",
+        "summary":"Consultant in Kubernetes:\n- Desigining Kubernetes cluster\n- Deploying Kubernetes cluster\n- Containerising applications\n- Creating usable Gitops Structures\n- Deploying Observability based on Prometheus\n- Deploying ArgoCD instance for both development and production",
+        "range":"May 2022 - September 2023"
+    },
+    {
+        "role":"Automation Specialist",
+        "company":"[KPN Security](https://kpn.com) | Contracting",
+        "summary":"Consultant in Automation:\n- Redhat Enterprise Linux 7 / 8\n- Ansible\n- Redhat Satellite\n- Ansible Tower\n- Gitlab",
+        "range":"November 2019 - January 2023"
+    },
+    {
         "role":"Opensource Consultant",
         "company":"[AT Computing](https://atcomputing.nl)",
         "summary":"Consultant in Opensource:\n- Redhat Enterprise Linux 7 / 8\n- Ansible\n- Redhat Satellite\n- Ansible Tower\n- Gitlab\n- Kubernetes\n- OpenShift",

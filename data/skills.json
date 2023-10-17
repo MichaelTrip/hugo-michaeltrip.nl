@@ -48,13 +48,17 @@
           {"name":"Linux","link":"https://kernel.org"},
           {"name": "Openshift","link":"https://wwww.openshift.com"},
           {"name": "lxd","link":"https://wwww.linuxcontainers.org"},
-          {"name": "rancher","link":"https://www.rancher.com"},
+          {"name": "Rancher","link":"https://www.rancher.com"},
           {"name": "Terraform", "link":"https://www.terraform.io/"},
           {"name": "Azure", "link":"https://www.azure.com"},
           {"name": "Kubernetes", "link":"https://www.kubernetes.io", "icon": "kubernetes"},
           {"name": "Helm", "link":"https://wwww.helm.sh", "icon": "kubernetes"},
           {"name": "Istio", "link":"https://www.istio.io", "icon": "kubernetes"},
-          {"name": "ArgoCD", "link":"https://argoproj.github.io/cd/", "icon": "kubernetes"}
+          {"name": "ArgoCD", "link":"https://argoproj.github.io/cd/", "icon": "kubernetes"},
+          {"name": "Cilium", "link":"https://cilium.io/", "icon": "kubernetes"},
+          {"name": "Github Actions", "link":"https://github.com", "icon": "github"},
+          {"name": "Gitlab Pipelines", "link":"https://gitlab.com", "icon": "gitlab"}
+
         ]
   }
 ]
