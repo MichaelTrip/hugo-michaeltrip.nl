@@ -1,5 +1,26 @@
 [
     {
+        "role":"Openshift / DevOps Engineer",
+        "company":"[Dutch Tax Office](https://www.atcomputing.nl) | Contracting",
+        "summary":"Devops / Openshift consultant:\n- Creating workshops for developers to onboard onto Openshift\n- Hands-on consultancy for Developers to get acquainted with Openshift\n- Developing best practices for developers to use\n- Participating in a Devops transision committee",
+        "range":"April 2024 - present"
+    },
+
+
+    {
+        "role":"Kubernetes engineer",
+        "company":"[AT Computing](https://www.atcomputing.nl) | Internal project",
+        "summary":"Consultant in Kubernetes:\n- Designing our new Learning platform\n- Writing Terraform plans to deploy into GCP\n- Designing and implmenting containers for our Lab environment",
+        "range":"January 2024 - March 2024"
+    },
+
+    {
+        "role":"Kubernetes engineer",
+        "company":"[Solvinity](https://www.solvinity.nl) | Contracting",
+        "summary":"Consultant in Kubernetes:\n- Writing migration plans to migrate to Cilium\n- Rewriting Helm Charts\n- Containerising applications",
+        "range":"Oktober 2022 - December 2023"
+    },
+    {
         "role":"Kubernetes Specialist",
         "company":"[Rijksinstituut voor Volksgezondheid en Milieu](https://rivm.nl) | Contracting",
         "summary":"Consultant in Kubernetes:\n- Desigining Kubernetes clusters\n- Deploying Kubernetes clusters\n- Containerising applications\n- Creating usable Gitops Structures\n- Deploying Observability based on Prometheus\n- Deploying ArgoCD instance for both development and production",
