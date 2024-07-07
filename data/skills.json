@@ -1,7 +1,7 @@
 [
   {
       "grouping":"Architecture & Virtualization",
-      "skills":[ "IP Networking","Firewalls","Load Balancing","Microservices","RESTful APIs","SaaS/PaaS/IaaS", "VMWare", "Proxmox", "QEMU", "DNS", "Postfix"]
+      "skills":[ "IP Networking","Firewalls","Load Balancing","Microservices","RESTful APIs","SaaS/PaaS/IaaS", "VMWare", "Proxmox", "QEMU", "Kubevirt", "DNS", "Postfix"]
   },{
       "grouping":"Languages, Operating Systems & Tools",
       "skills":[
@@ -57,6 +57,7 @@
           {"name": "Helm", "link":"https://wwww.helm.sh", "icon": "kubernetes"},
           {"name": "Istio", "link":"https://www.istio.io", "icon": "kubernetes"},
           {"name": "ArgoCD", "link":"https://argoproj.github.io/cd/", "icon": "kubernetes"},
+          {"name": "Tekton", "link":"https://tekton.dev", "icon": "kubernetes"},
           {"name": "Cilium", "link":"https://cilium.io/", "icon": "kubernetes"},
           {"name": "Github Actions", "link":"https://github.com", "icon": "github"},
           {"name": "Gitlab Pipelines", "link":"https://gitlab.com", "icon": "gitlab"}
