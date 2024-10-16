@@ -1,7 +1,8 @@
 ---
 title: "Cheap External Ips to Your Home Network"
 date: 2024-10-16T14:33:57+02:00
-draft: true
+draft: false
+tags: [gre, opnsense, networking, kubernetes]
 ---
 
 Intro
