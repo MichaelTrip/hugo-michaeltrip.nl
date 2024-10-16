@@ -24,19 +24,19 @@ jobs:
       - name: Build
         run: hugo
 
-      - name: commit
-        uses: stefanzweifel/git-auto-commit-action@v4
-        if: ${{ github.ref == 'refs/heads/master' }}
-        with:
-          commit_message: Automated Change
-          branch: master
-          repository: .
+      # - name: commit
+      #   uses: stefanzweifel/git-auto-commit-action@v4
+      #   if: ${{ github.ref == 'refs/heads/master' }}
+      #   with:
+      #     commit_message: Automated Change
+      #     branch: master
+      #     repository: .
 
-      - uses: actions/checkout@v3
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-          clean: true
+      # - uses: actions/checkout@v3
+      #   with:
+      #     submodules: true  # Fetch Hugo themes (true OR recursive)
+      #     fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      #     clean: true
 
       - uses: actions-ecosystem/action-get-latest-tag@v1
         id: get-latest-tag
