@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pvc on Michaeltrip.nl :: Open Source Consultant</title>
+    <link>https://michaeltrip.nl/tags/pvc/</link>
+    <description>Recent content in pvc on Michaeltrip.nl :: Open Source Consultant</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://michaeltrip.nl/tags/pvc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create your own maintenance pod</title>
+      <link>https://michaeltrip.nl/blog/create-your-own-maintenance-pod/</link>
+      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/blog/create-your-own-maintenance-pod/</guid>
+      <description>Intro So the other day i tried to update my k3s cluster running at the Oracle Cloud. Somehow, my Postgres statefulset crashed and the postmaster.pid file was not removed properly. Anyway, the pod was restarted but was now in a CrashLoopBackOff stage. The error message stated that the lock file couldn´t be removed. So how do you remove a file from a PersistentVolumeClaim with the container constantly restarting? I found something.</description>
+    </item>
+    
+  </channel>
+</rss>

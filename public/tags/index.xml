@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Michaeltrip.nl :: Open Source Consultant</title>
+    <link>https://michaeltrip.nl/tags/</link>
+    <description>Recent content in Tags on Michaeltrip.nl :: Open Source Consultant</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://michaeltrip.nl/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blog</title>
+      <link>https://michaeltrip.nl/tags/blog/</link>
+      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud</title>
+      <link>https://michaeltrip.nl/tags/cloud/</link>
+      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://michaeltrip.nl/tags/kubernetes/</link>
+      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pvc</title>
+      <link>https://michaeltrip.nl/tags/pvc/</link>
+      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/pvc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>homelab</title>
+      <link>https://michaeltrip.nl/tags/homelab/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/homelab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>openshift</title>
+      <link>https://michaeltrip.nl/tags/openshift/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/openshift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Atlassian Ecosystem</title>
+      <link>https://michaeltrip.nl/tags/atlassian-ecosystem/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/atlassian-ecosystem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BOSH</title>
+      <link>https://michaeltrip.nl/tags/bosh/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/bosh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DevOps</title>
+      <link>https://michaeltrip.nl/tags/devops/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://michaeltrip.nl/tags/java/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>monit</title>
+      <link>https://michaeltrip.nl/tags/monit/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/monit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://michaeltrip.nl/tags/python/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>REST APIs</title>
+      <link>https://michaeltrip.nl/tags/rest-apis/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/rest-apis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>agile</title>
+      <link>https://michaeltrip.nl/tags/agile/</link>
+      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/agile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continuous Delivery</title>
+      <link>https://michaeltrip.nl/tags/continuous-delivery/</link>
+      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/continuous-delivery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continuous Integration</title>
+      <link>https://michaeltrip.nl/tags/continuous-integration/</link>
+      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/continuous-integration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Culture</title>
+      <link>https://michaeltrip.nl/tags/culture/</link>
+      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/culture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Atlassian Developer Ecosystem</title>
+      <link>https://michaeltrip.nl/tags/atlassian-developer-ecosystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/atlassian-developer-ecosystem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bamboo</title>
+      <link>https://michaeltrip.nl/tags/bamboo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/bamboo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bash/shell</title>
+      <link>https://michaeltrip.nl/tags/bash/shell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/bash/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bitbucket</title>
+      <link>https://michaeltrip.nl/tags/bitbucket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/bitbucket/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CI/CD pipelines</title>
+      <link>https://michaeltrip.nl/tags/ci/cd-pipelines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/ci/cd-pipelines/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Confluence</title>
+      <link>https://michaeltrip.nl/tags/confluence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/confluence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://michaeltrip.nl/tags/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://michaeltrip.nl/tags/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JIRA</title>
+      <link>https://michaeltrip.nl/tags/jira/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/jira/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jQuery</title>
+      <link>https://michaeltrip.nl/tags/jquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/jquery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JSON</title>
+      <link>https://michaeltrip.nl/tags/json/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maven</title>
+      <link>https://michaeltrip.nl/tags/maven/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/maven/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>node.js</title>
+      <link>https://michaeltrip.nl/tags/node.js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/node.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring</title>
+      <link>https://michaeltrip.nl/tags/spring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/spring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xml/xslt</title>
+      <link>https://michaeltrip.nl/tags/xml/xslt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/tags/xml/xslt/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Michaeltrip.nl :: Open Source Consultant</title>
+    <link>https://michaeltrip.nl/blog/</link>
+    <description>Recent content in Blog on Michaeltrip.nl :: Open Source Consultant</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://michaeltrip.nl/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create your own maintenance pod</title>
+      <link>https://michaeltrip.nl/blog/create-your-own-maintenance-pod/</link>
+      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/blog/create-your-own-maintenance-pod/</guid>
+      <description>Intro So the other day i tried to update my k3s cluster running at the Oracle Cloud. Somehow, my Postgres statefulset crashed and the postmaster.pid file was not removed properly. Anyway, the pod was restarted but was now in a CrashLoopBackOff stage. The error message stated that the lock file couldn´t be removed. So how do you remove a file from a PersistentVolumeClaim with the container constantly restarting? I found something.</description>
+    </item>
+    
+    <item>
+      <title>Deploying OpenShift OKD in GCP (Google Cloud)</title>
+      <link>https://michaeltrip.nl/blog/deploy-okd-gcp/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/blog/deploy-okd-gcp/</guid>
+      <description>Intro After trying to create a SNO Openshift Node in my Homelab, it was time to scale it up even further and trying to create a OpenShift cluster in the cloud. For this use case i will be using GCP.
+Preperations First, there are some preperations to be done;
+ A service account in GCP with a lot of permissions in GCP Enable certain API&amp;rsquo;s in GCP A Managed DNS zone in GCP Both the oc binary and the openshift-install binary.</description>
+    </item>
+    
+    <item>
+      <title>Setting up Openshift single node in your own Homelab</title>
+      <link>https://michaeltrip.nl/blog/openshift-sno-in-homelab/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/blog/openshift-sno-in-homelab/</guid>
+      <description>Intro So i wanted to run OpenShift in my Homelab. Why? Because i can, and i had some spare time ;-).
+For a long i wanted to setup a Openshift cluster in my own Homelab. Due to resource limitations i can only run one Openshift node. After many moons of searching and testing, i have found a very convinient way to enroll a single node OpenShift 4.11 (OKD) in my Homelab.</description>
+    </item>
+    
+    <item>
+      <title>Tips on the CKAD exam</title>
+      <link>https://michaeltrip.nl/blog/setting-up-kubernetes/</link>
+      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltrip.nl/blog/setting-up-kubernetes/</guid>
+      <description>Intro So i passed the CKAD exam last september. In this blog i wanted to share some tips.
+Learning matters For me personally i am the type of guy that learns by just doing it. Set up some Kubernetes node with either Kind or Rancher Desktop and just try some things out.
+Also, check out some great Udemy courses. I personally liked this CKAD course by Mumshad Mannambeth.
+Also, try some practice exercises from the internet.</description>
+    </item>
+    
+  </channel>
+</rss>
