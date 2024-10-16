@@ -136,6 +136,15 @@ Add your virtual IP Address there.
 
 {{< figure src="/img/blog20241016/screenshot3.png" alt="screenshot3" width="960px" >}}
 
+### GRE - MTU Sizes - Optional
+
+I had some problems with sites not reachable through the GRE tunnel. You maybe have to play somewhat with the MTU and MSS settings. You can do that by going to the `Interface --> YOURGREINTERFACE` and set:
+
+```
+MTU: 1476
+MSS: 1440
+```
+This helped me overcome some connection problems.
 
 ## GRE - Firewall rules - OPNSense
 
