@@ -95,3 +95,113 @@ The OPNSense part was more tricky to fix. I had to fiddle out some specific sett
 
 ### GRE - Interface set-up - OPNSense
 
+First, create your GRE interface. Go to: `Interfaces --> Other Types --> GRE`.
+After that, create the GRE interface. 
+
+{{< figure src="/img/blog20241016/screenshot1.png" alt="screenshot1" width="960px" >}}
+
+I have obfuscated the screenshot due to privacy concerns. But it basically speaks for itself:
+- WAN Interface - Your external Interface
+- `1.1.1.1` - is the external IP Address of the Hetzner virtual machine
+- `10.99.239.18` - The local point-to-point address of the OPNsense machine
+- `10.99.239.17/30` - The remote point-to-point address of the Hetzner virtual machine
+
+### GRE - Assign interface and configuring it - OPNSense
+
+Now it is time to assign the interface. Go to `Interfaces --> Assignment` and select your GRE interface. Give it a description and click on `Add`.
+
+After that, enable your interface.
+
+Go to `Interfaces --> Your Interface name` and click `Enable Interface`. Also make sure to click the checkboxes of the `Block Private Networks` and `Block bogon networks`. Click `Save`.
+
+### GRE - Enable the Default route - OPNSense
+
+Now it is time to enable the default route. Go to `System --> Gateways --> Configuration`. 
+
+Find your Gateway, it is called something like `GW_DESCRIPTIONOFYOURINTERFACE` and click the little pencil.
+
+Click on the checkbox called `Upstream Gateway` and click on save.
+
+{{< figure src="/img/blog20241016/screenshot2.png" alt="screenshot2" width="960px" >}}
+
+
+### GRE - Add a Virtual IP - OPNSense
+
+I added the ip adress from the Hetzner Floating IP `123.123.123.123` as Virtual IP.
+
+This can be done by going to: `Interfaces --> Virtual IP's --> Settings`
+
+Add your virtual IP Address there. 
+
+{{< figure src="/img/blog20241016/screenshot3.png" alt="screenshot3" width="960px" >}}
+
+
+## GRE - Firewall rules - OPNSense
+
+After that, let's setup some firewall rules. You don't want anybody to connect to your GRE tunnel.
+
+Go to `Firewall --> Rules --> YOURWANTINTERFACE`. Create a firewall rule for the following:
+
+```
+INTERFACE: WAN
+Direction: in
+TCP/IP Version: IPv4
+Protocol: GRE
+Source: 1.1.1.1/32
+```
+
+That should be enough to keep the GRE protocol firewalled.
+
+### GRE - Configure Port Forwarding - OPNSense
+
+Now it is time to configure some port forwarding. Go to `Firewall --> NAT --> Port forward`.
+
+Add the following Port forward:
+```
+INTERFACE: GRETUNNEL
+DESTINATION: 123.123.123.123
+Redirect Target IP: <ipadressofyourwebserver>
+Redirect port: 80 or 443
+```
+
+The firewall rule will be created automatically. 
+Now your web server should be reachable from the ip adddress `123.123.123.123` 
+
+You can also optionally configure a Outbound NAT rule to route some traffic to this GRE tunnel.
+
+### GRE - Configure Outbound NAT and routing through GRE Tunnel
+
+#### Outbound NAT
+
+First, make sure to set your Outbound nat to `Hybrid`. After that, you can create a outbound nat rule
+
+Go to `Firewall --> NAT --> Outbound`
+
+Add the following rule:
+
+```
+INTERFACE: GRETUNNEL
+Source Addres: <yoursubnetyouwanttoroutethroughthegretunnel>/24
+Translation / Target: 123.123.123.123
+```
+
+Click on save and you have configured part one of the Outbound rule
+
+Now you have to configure a firewall rule to match and route the traffic through the GRE tunnel itself. This can be done with a firewall rule. Go to `Firewall --> Rules -->TheNetworkWhereYourHostsLive`
+
+And add the following rule:
+
+```
+INTERFACE: TheNetworkWhereYourHostsLive
+Source: <yoursubnetyouwanttoroutethroughthegretunnel>/24 or a host/32
+Gateway: Your GRE Gateway
+```
+
+Click save and click Apply. Now your hosts will route all traffic through the GRE Tunnel.
+
+# Conclusion
+
+This is a very cheap way to have some extra IPv4 addresses at your disposal when having a advanced home router such as OPNSense. A Virtual machine from Hetzner starts with 3,49 euro and a floating IP Address costs around 3 euro. A very cheap way to get some extra ip addresses for your homelab.
+
+
+
