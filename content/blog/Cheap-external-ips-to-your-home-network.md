@@ -1,6 +1,6 @@
 ---
 title: "Cheap External Ips to Your Home Network"
-date: 2024-10-16T14:33:57+02:00
+date: 2025-01-24T07:17:00+02:00
 draft: false
 tags: [gre, opnsense, networking, kubernetes]
 ---
@@ -208,6 +208,24 @@ Gateway: Your GRE Gateway
 ```
 
 Click save and click Apply. Now your hosts will route all traffic through the GRE Tunnel.
+
+# Optional: Add firewall rules to your Linux host for routing the GRE traffic
+
+I added some optional firewall rules because i like to enable `firewalld`.
+
+```bash
+# adding my tun0 and eth0 to the same zone. This makes it possible to add firewall rules to those interfaces:
+$ firewall-cmd --zone=public --add-interface=eth0 --add-interface=tun0 --permanent
+
+# Adding a allow all rule to firewalld for all my other ip addresses
+$ firewall-cmd --permanent --zone=public --add-source=<ip1> --add-source=<ip2>
+
+# Add a firewall rule to allow GRE traffic from your endpoint to the Linux machine
+$ firewall-cmd --add-rich-rule='rule family=ipv4 source address=<ip home> service name=gre log prefix="GRE" level="notice" accept'
+
+# And the last one is to allow all traffic to your routes ip address:
+$ firewall-cmd --zone=public --add-rich-rule='rule family="ipv4" source any destination address="<second ip address of hetzner>" port any accept' --permanent
+```
 
 # Conclusion
 
