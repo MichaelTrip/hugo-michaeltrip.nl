@@ -9,16 +9,16 @@ Intro
 -----
 
 For my homelab Kubernetes cluster i had an interesting problem: i already have 443/tcp bound to my main ipv4 address from my provider. I use it already in my homelab as a reverse proxy to some other services already
-running on some other virtual machines. But i also run a Kubernetes cluster in my homelab that i mainly use for hosting experimental things. Also a lot of ingress stuff. So i wanted the host my own ingress on a external ip address. After some trial and error i found the perfect cheap solution: A Hetzner virtual machine with a floating ip and routing that IP through GRE to my OPNSense router. 
+running on some other virtual machines. But i also run a Kubernetes cluster in my homelab that i mainly use for hosting experimental things. Also a lot of ingress stuff. So i wanted the host my own ingress on a external ip address. After some trial and error i found the perfect cheap solution: A Hetzner virtual machine with a floating ip and routing that IP through GRE to my OPNSense router.
 
 ## Some preperations
 
-First, i needed to set some things up. I created a virtual machine at Hetzner Cloud. Just a low spec virtual machine. After that machine was up and running i added a "Floating IP". That is basically a ip address that you can assign to one or more virtual machines. 
+First, i needed to set some things up. I created a virtual machine at Hetzner Cloud. Just a low spec virtual machine. After that machine was up and running i added a "Floating IP". That is basically a ip address that you can assign to one or more virtual machines.
 
 After the machine was created i logged in and turned on the `arp_proxy` and `forwarding` in `/etc/sysctl.conf`:
 
 ```bash
-$ sudo cat /etc/sysctl.conf 
+$ sudo cat /etc/sysctl.conf
 
 net.ipv4.ip_forward=1
 net.ipv4.conf.all.proxy_arp=1
@@ -29,7 +29,7 @@ After that, i run the following command for it to persist:
 ```bash
 $ sudo sysctl -p
 ```
-After that, Proxy ARP and IP Forwarding was activated and i could continue with the next step: setting up GRE. 
+After that, Proxy ARP and IP Forwarding was activated and i could continue with the next step: setting up GRE.
 
 
 ## Setting up GRE - Hetzner side
@@ -80,7 +80,7 @@ the `remote 2.2.2.2` part is the other side you want to connect, in this example
 
 ### the `up` part
 
-In the `up` part i add a static route to my tunnel address. 
+In the `up` part i add a static route to my tunnel address.
 ```
 up ip route add 123.123.123.123/32 dev tun0
 ```
@@ -97,7 +97,7 @@ The OPNSense part was more tricky to fix. I had to fiddle out some specific sett
 ### GRE - Interface set-up - OPNSense
 
 First, create your GRE interface. Go to: `Interfaces --> Other Types --> GRE`.
-After that, create the GRE interface. 
+After that, create the GRE interface.
 
 {{< figure src="/img/blog20241016/screenshot1.png" alt="screenshot1" width="960px" >}}
 
@@ -117,7 +117,7 @@ Go to `Interfaces --> Your Interface name` and click `Enable Interface`. Also ma
 
 ### GRE - Enable the Default route - OPNSense
 
-Now it is time to enable the default route. Go to `System --> Gateways --> Configuration`. 
+Now it is time to enable the default route. Go to `System --> Gateways --> Configuration`.
 
 Find your Gateway, it is called something like `GW_DESCRIPTIONOFYOURINTERFACE` and click the little pencil.
 
@@ -132,7 +132,7 @@ I added the ip adress from the Hetzner Floating IP `123.123.123.123` as Virtual 
 
 This can be done by going to: `Interfaces --> Virtual IP's --> Settings`
 
-Add your virtual IP Address there. 
+Add your virtual IP Address there.
 
 {{< figure src="/img/blog20241016/screenshot3.png" alt="screenshot3" width="960px" >}}
 
@@ -174,8 +174,8 @@ Redirect Target IP: <ipadressofyourwebserver>
 Redirect port: 80 or 443
 ```
 
-The firewall rule will be created automatically. 
-Now your web server should be reachable from the ip adddress `123.123.123.123` 
+The firewall rule will be created automatically.
+Now your web server should be reachable from the ip adddress `123.123.123.123`
 
 You can also optionally configure a Outbound NAT rule to route some traffic to this GRE tunnel.
 
@@ -224,7 +224,7 @@ $ firewall-cmd --permanent --zone=public --add-source=<ip1> --add-source=<ip2>
 $ firewall-cmd --add-rich-rule='rule family=ipv4 source address=<ip home> service name=gre log prefix="GRE" level="notice" accept'
 
 # And the last one is to allow all traffic to your routes ip address:
-$ firewall-cmd --zone=public --add-rich-rule='rule family="ipv4" source any destination address="<second ip address of hetzner>" port any accept' --permanent
+firewall-cmd --zone=public --add-rich-rule='rule family="ipv4" destination address="<second ip of hetzner>" accept' --permanent
 ```
 
 # Conclusion
